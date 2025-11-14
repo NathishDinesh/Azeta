@@ -1,0 +1,318 @@
+:host {
+  display: block;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #f8f1e7;
+  background-color: #2b1e1e;
+  overflow-x: hidden !important; /* Prevent horizontal scrolling */
+  width: 100%;
+}
+:host, html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;          /* ✅ stops all horizontal scrolls */
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+.hero-full {
+  position: relative;
+  width: 100vw;                /* ✅ force to viewport width */
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/assets/chocolates/chocobean4.jpg') no-repeat center center;
+  background-size: cover;       /* ✅ scales proportionally */
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 10, 10, 0.55);
+  z-index: 1;
+}
+
+.hero-center {
+  position: relative;
+  z-index: 2;
+  padding: 0 5vw;
+  animation: fadeIn 1.6s ease;
+  max-width: 90vw;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.hero-center h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 6vw, 4rem);
+  color: #c6a664;
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+  word-break: break-word;
+}
+
+.hero-center p {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(0.9rem, 1.8vw, 1.2rem);
+  color: #f8f1e7;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* ============================= */
+/* OUR STORY SECTION (BEIGE BG) */
+/* ============================= */
+.story-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 10%;
+  gap: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f3e9da; /* ✅ Elegant beige background */
+}
+
+.story-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.story-image img {
+  width: 100%;
+  max-width: 440px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+  height: auto;
+}
+
+.story-image img:hover {
+  transform: scale(1.03);
+}
+
+.story-text {
+  flex: 1 1 300px;
+  color: #2b1e1e; /* ✅ Dark text for readability */
+  padding: 20px;
+  max-width: 520px;
+  text-align: left;
+}
+
+.story-text h2 {
+  font-family: 'Playfair Display', serif;
+  color: #a1783f; /* ✅ Warm golden tone */
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin-bottom: 12px;
+}
+
+.story-text p {
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: #2b1e1e;
+}
+
+.btn-outline {
+  display: inline-block;
+  color: #a1783f;
+  border: 1px solid #a1783f;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn-outline:hover {
+  background: #a1783f;
+  color: #f8f1e7;
+}
+
+/* ============================= */
+/* AZETA LOGO SECTION (WHITE BG) */
+/* ============================= */
+.logo-section {
+  text-align: center;
+  background-color: #f3e9da; /* ✅ Changed from #2b1e1e to white */
+  padding: 60px 0;
+  width: 100%;
+}
+
+.logo-section img {
+  width: clamp(160px, 25vw, 300px);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Softer shadow for light bg */
+  height: auto;
+  max-width: 100%;
+}
+
+/* ============================= */
+/* BRAND LINE SECTION (WHITE BG) */
+/* ============================= */
+.brand-line {
+  text-align: center;
+  padding: 60px 8%;
+  background-color: #f3e9da; /* ✅ Changed from dark to white */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.brand-line h2 {
+  font-family: 'Playfair Display', serif;
+  color: #a1783f; /* ✅ Softer gold tone for white background */
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 12px;
+}
+
+.brand-line p {
+  margin-bottom: 20px;
+  opacity: 0.9;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  color: #2b1e1e;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #c6a664;
+  color: #2b1e1e;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  background: #2b1e1e;
+  color: #f8f1e7;
+}
+
+
+/* ============================= */
+/* RESPONSIVE FIXES */
+/* ============================= */
+@media (max-width: 992px) {
+  .story-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 6%;
+  }
+
+  .story-text {
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-full {
+    min-height: 85vh;
+    background-position: center;
+  }
+
+  .hero-center {
+    padding: 0 8vw;
+  }
+
+  .hero-center h1 {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+  }
+
+  .hero-center p {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+  }
+
+  .story-image img {
+    max-width: 320px;
+  }
+
+  .brand-line {
+    padding: 40px 8%;
+  }
+
+  .btn-outline,
+  .btn-primary {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+/* Passion Section (NEW) */
+.passion-section {
+  position: relative;
+  background: url('/assets/chocolates/beanbar.jpg') center/cover no-repeat;
+  color: #f8f1e7;
+  text-align: center;
+  padding: 100px 10%;
+  overflow: hidden;
+}
+
+.passion-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 10, 10, 0.6);
+}
+
+.passion-text {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.passion-text h2 {
+  font-family: 'Playfair Display', serif;
+  color: #c6a664;
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.passion-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .passion-section {
+    padding: 60px 6%;
+  }
+  .passion-text h2 {
+    font-size: 1.8rem;
+  }
+  .passion-text p {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* Safe area for iPhones */
+@supports (padding: max(0px)) {
+  body {
+    padding-left: max(0px, env(safe-area-inset-left));
+    padding-right: max(0px, env(safe-area-inset-right));
+  }
+}

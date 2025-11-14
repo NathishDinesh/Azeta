@@ -1,0 +1,142 @@
+:host {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  color: #2b1e1e;
+  background-color: #f8f1e7;
+  overflow-x: hidden;
+}
+
+/* HERO SECTION */
+.contact-hero {
+  position: relative;
+  height: 60vh;
+  background: url('/assets/chocolates/cacao-bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f8f1e7;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 10, 10, 0.55);
+}
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #c6a664;
+  margin-bottom: 10px;
+}
+.hero-text p {
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+}
+
+/* INFO CARDS */
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 60px 10%;
+}
+.info-card {
+  text-align: center;
+  background: #fffaf3;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+.info-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: #c6a664;
+  margin-bottom: 8px;
+}
+.info-card p, .info-card a {
+  color: #2b1e1e;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* FORM SECTION */
+.contact-form {
+  text-align: center;
+  padding: 60px 10%;
+}
+.contact-form h2 {
+  font-family: 'Playfair Display', serif;
+  color: #c6a664;
+  margin-bottom: 30px;
+}
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+input, textarea {
+  padding: 12px 16px;
+  border: 1px solid #c6a664;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 1rem;
+  color: #2b1e1e;
+  font-family: inherit;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #2b1e1e;
+}
+.btn-primary {
+  background: #c6a664;
+  color: #2b1e1e;
+  padding: 12px 22px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn-primary:hover {
+  background: #2b1e1e;
+  color: #f8f1e7;
+}
+
+/* CTA SECTION */
+.contact-cta {
+  text-align: center;
+  background-color: #2b1e1e;
+  color: #f8f1e7;
+  padding: 60px 10%;
+}
+.btn-outline {
+  display: inline-block;
+  border: 1px solid #c6a664;
+  color: #c6a664;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background: #c6a664;
+  color: #2b1e1e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-info {
+    padding: 40px 6%;
+  }
+  .contact-form {
+    padding: 40px 6%;
+  }
+}

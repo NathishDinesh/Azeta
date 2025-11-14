@@ -1,0 +1,173 @@
+/* ========================= */
+/* BASE HEADER STYLING */
+/* ========================= */
+.header-toolbar {
+  background-color: #1e0d0d;
+  color: #d7b46a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem clamp(1rem, 4vw, 2rem);
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  width: 100%;               /* ✅ exact viewport width */
+  max-width: 100%;
+  overflow-x: visible;         /* ✅ prevent navbar overflow */
+}
+
+/* Logo */
+.logo-container .logo-main {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  letter-spacing: 3px;
+  color: #d7b46a;
+  white-space: nowrap;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;            /* ✅ prevents long text pushing layout */
+}
+
+.nav-links a {
+  color: #d7b46a;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+  margin: 0 clamp(0.8rem, 1.5vw, 1.5rem);
+  text-transform: none;
+}
+
+.nav-links a:hover {
+  color: #f0d28a;
+}
+
+/* CTA Button */
+.explore-btn {
+  border: 1.5px solid #d7b46a;
+  color: #d7b46a;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  text-transform: none;
+  transition: all 0.3s ease;
+  background: transparent;
+  white-space: nowrap;
+}
+
+.explore-btn:hover {
+  background-color: #d7b46a;
+  color: #1e0d0d;
+}
+
+/* Menu Toggle (Hamburger) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #d7b46a;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.menu-toggle .material-icons {
+  font-size: 2rem;
+}
+
+/* ========================= */
+/* RESPONSIVE FIXES */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .header-toolbar {
+    padding: 1rem 2rem;
+  }
+
+  .nav-links a {
+    margin: 0 1rem;
+  }
+}
+
+/* Mobiles */
+/* ========================= */
+/* MOBILE MENU (Slide-in) */
+/* ========================= */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Overlay behind the menu */
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 998;
+  }
+
+  .menu-overlay.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Slide-in Nav */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 75%;
+    max-width: 300px;
+    background-color: #1e0d0d;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.5);
+    transition: right 0.35s ease-in-out;
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-links a,
+  .explore-btn {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .explore-btn {
+    text-align: center;
+  }
+}
+
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .header-toolbar {
+    padding: 0.8rem 1rem;
+  }
+
+  .logo-container .logo-main {
+    font-size: 1.4rem;
+  }
+
+  .explore-btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 1rem;
+  }
+}

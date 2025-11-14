@@ -1,0 +1,47 @@
+<div class="products-page">
+  <section class="hero-banner">
+    <div class="hero-content">
+      <h2 class="hero-quote">Our Creations — "From Pure Cacao to Perfect Bars"</h2>
+    </div>
+  </section>
+  
+    <!-- Couverture Chocolates -->
+    <section class="product-section">
+      <h3>Couverture Chocolates</h3>
+      <div class="product-grid">
+        <div class="product-card" *ngFor="let item of couverture">
+          <img [src]="item.image" [alt]="item.name" />
+          <h4>{{ item.name }}</h4>
+          <p>{{ item.desc }}</p>
+          <button class="btn-outline">View Details</button>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Cacao -->
+    <section class="product-section">
+      <h3>Cacao</h3>
+      <div class="product-grid">
+        <div class="product-card" *ngFor="let item of cacao">
+          <img [src]="item.image" [alt]="item.name" />
+          <h4>{{ item.name }}</h4>
+          <p>{{ item.desc }}</p>
+          <!-- <button class="btn-outline">Learn More</button> -->
+        </div>
+      </div>
+    </section>
+  
+    <!-- Signature Bars -->
+    <section class="product-section">
+      <h3>Signature Bars</h3>
+      <div class="product-grid">
+        <div class="product-card" *ngFor="let item of signature">
+          <img [src]="item.image" [alt]="item.name" />
+          <h4>{{ item.name }}</h4>
+          <p>{{ item.desc }}</p>
+          <!-- <button class="btn-outline">View Details</button> -->
+        </div>
+      </div>
+    </section>
+  </div>
+  

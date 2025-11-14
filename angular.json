@@ -23,10 +23,12 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
-              }
+                    "input": "src/assets",
+    "output": "/assets"
+              }, "src/favicon.ico"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -85,6 +87,7 @@
               }
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -92,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "63195388-a9d4-4f0e-ae16-195500e6e610"
   }
 }

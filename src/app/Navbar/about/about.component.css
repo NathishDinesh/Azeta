@@ -1,0 +1,173 @@
+:host {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  color: #2b1e1e;
+  background-color: #f8f1e7;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.about-hero {
+  position: relative;
+  height: 70vh;
+  background: url('/assets/chocolates/cocoplant.jpeg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f8f1e7;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 10, 10, 0.55);
+}
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  color: #c6a664;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 10px;
+}
+.hero-text p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+/* INTRO */
+.about-intro {
+  text-align: center;
+  padding: 70px 12%;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #2b1e1e;
+  background: #ffffff;
+}
+
+/* FARM SECTION (BEIGE) */
+.about-farm {
+  background: #f3e9da;
+  padding: 80px 10%;
+}
+.farm-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+.farm-image {
+  flex: 1 1 300px;
+}
+.farm-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+.farm-text {
+  flex: 1 1 400px;
+}
+.farm-text h2 {
+  font-family: 'Playfair Display', serif;
+  color: #a1783f;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.farm-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #2b1e1e;
+}
+
+/* FERMENTATION SECTION (WHITE) */
+.about-fermentation {
+  background: #ffffff;
+  padding: 80px 10%;
+}
+.fermentation-content {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  gap: 40px;
+}
+.fermentation-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+.fermentation-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+.fermentation-text {
+  flex: 1 1 400px;
+}
+.fermentation-text h2 {
+  font-family: 'Playfair Display', serif;
+  color: #a1783f;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.fermentation-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #2b1e1e;
+}
+
+/* QUOTE */
+.about-quote {
+  background-color: #2b1e1e;
+  color: #f8f1e7;
+  text-align: center;
+  padding: 80px 10%;
+  font-family: 'Playfair Display', serif;
+}
+.about-quote blockquote {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  line-height: 1.4;
+  font-style: italic;
+  position: relative;
+}
+.about-quote blockquote::before {
+  content: '“';
+  font-size: 3rem;
+  color: #c6a664;
+  position: absolute;
+  left: -10px;
+  top: -20px;
+}
+
+/* CTA */
+.about-cta {
+  text-align: center;
+  padding: 60px 0;
+}
+.btn-primary {
+  background: #c6a664;
+  color: #2b1e1e;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background: #2b1e1e;
+  color: #f8f1e7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .farm-content,
+  .fermentation-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-intro {
+    padding: 50px 6%;
+  }
+  .farm-text h2,
+  .fermentation-text h2 {
+    font-size: 1.8rem;
+  }
+}
