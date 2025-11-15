@@ -1,0 +1,65 @@
+.chocolate-section {
+  padding: 5rem 2rem;
+  text-align: center;
+  background-color: #f8f4f0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.chocolate-section h2 {
+  color: #3b2f2f;
+  margin-bottom: 3.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.choco-card {
+  width: 350px; /* increased width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.choco-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 250px; /* taller image */
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+mat-card-title {
+  margin-top: 1.2rem;
+  font-size: 1.4rem; /* bigger title */
+  font-weight: 600;
+  color: #3b2f2f;
+  text-align: center;
+}
+
+mat-card-content {
+  margin-top: 0.8rem;
+  font-size: 1rem; /* slightly larger text */
+  color: #5a4d4d;
+  text-align: center;
+  line-height: 1.5;
+}

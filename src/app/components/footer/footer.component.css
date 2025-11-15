@@ -1,0 +1,92 @@
+.azeta-footer {
+  background-color: #1e0d0d;
+  color: #f8f1e7;
+  padding: 60px 8% 20px;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-bottom: 1px solid rgba(198, 166, 100, 0.3);
+  padding-bottom: 30px;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+  min-width: 240px;
+}
+
+.footer-column h2 {
+  font-family: 'Playfair Display', serif;
+  color: #c6a664;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.footer-column h3 {
+  font-family: 'Playfair Display', serif;
+  color: #c6a664;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.footer-column p,
+.footer-column li {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin: 6px 0;
+}
+
+.footer-column a {
+  color: #f8f1e7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #c6a664;
+}
+
+.tagline {
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: -6px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s;
+}
+
+.social-icons img:hover {
+  filter: invert(67%) sepia(42%) saturate(508%) hue-rotate(20deg);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-top: 30px;
+}
