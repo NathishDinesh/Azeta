@@ -1,0 +1,10 @@
+cat > netlify.toml <<'EOF'
+[build]
+  command = "npm ci && npm run build"
+  publish = "dist/azeta-pollachi"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+EOF
