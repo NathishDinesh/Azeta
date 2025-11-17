@@ -1,47 +1,52 @@
 <div class="products-page">
+
+  <!-- HERO / NAV BAND -->
   <section class="hero-banner">
     <div class="hero-content">
-      <h2 class="hero-quote">Our Creations — "From Pure Cacao to Perfect Bars"</h2>
+      <!-- <h2 class="hero-quote">Our Creations — <span>"From Pure Cacao to Perfect Bars"</span></h2> -->
+
+      <!-- Quick category links (call scrollTo) -->
+      <nav class="quick-nav" aria-label="product categories">
+        <button class="nav-link" (click)="scrollTo('couverture')">Couverture Bars</button>
+        <button class="nav-link" (click)="scrollTo('cacao')">Cacao Products</button>
+      </nav>
     </div>
   </section>
-  
-    <!-- Couverture Chocolates -->
-    <section class="product-section">
-      <h3>Couverture Chocolates</h3>
-      <div class="product-grid">
-        <div class="product-card" *ngFor="let item of couverture">
+
+  <!-- ===================== -->
+  <!-- COUVERTURE BARS -->
+  <!-- ===================== -->
+  <section id="couverture" class="product-section couverture-section">
+    <div class="section-inner">
+      <h3 class="section-title">Couverture Bars</h3>
+      <!-- <div class="section-subtitle">From Pure Cacao to Perfect Bars</div> -->
+
+      <div class="mason-grid">
+        <div class="mason-item" *ngFor="let item of couverture">
           <img [src]="item.image" [alt]="item.name" />
-          <h4>{{ item.name }}</h4>
-          <p>{{ item.desc }}</p>
-          <button class="btn-outline">View Details</button>
+          <div class="item-title">{{ item.name }}</div>
         </div>
       </div>
-    </section>
-  
-    <!-- Cacao -->
-    <section class="product-section">
-      <h3>Cacao</h3>
-      <div class="product-grid">
-        <div class="product-card" *ngFor="let item of cacao">
+    </div>
+  </section>
+
+  <!-- Spacer between sections -->
+  <div class="section-gap" aria-hidden="true"></div>
+
+  <!-- ===================== -->
+  <!-- CACAO PRODUCTS -->
+  <!-- ===================== -->
+  <section id="cacao" class="product-section cacao-section">
+    <div class="section-inner">
+      <h3 class="section-title">Cacao Products</h3>
+
+      <div class="mason-grid">
+        <div class="mason-item" *ngFor="let item of cacao">
           <img [src]="item.image" [alt]="item.name" />
-          <h4>{{ item.name }}</h4>
-          <p>{{ item.desc }}</p>
-          <!-- <button class="btn-outline">Learn More</button> -->
+          <div class="item-title">{{ item.name }}</div>
         </div>
       </div>
-    </section>
-  
-    <!-- Signature Bars -->
-    <section class="product-section">
-      <h3>Signature Bars</h3>
-      <div class="product-grid">
-        <div class="product-card" *ngFor="let item of signature">
-          <img [src]="item.image" [alt]="item.name" />
-          <h4>{{ item.name }}</h4>
-          <p>{{ item.desc }}</p>
-          <!-- <button class="btn-outline">View Details</button> -->
-        </div>
-      </div>
-    </section>
-  </div>
-  
+    </div>
+  </section>
+
+</div>

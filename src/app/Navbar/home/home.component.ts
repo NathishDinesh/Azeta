@@ -16,6 +16,13 @@ export class HomeComponent {
   openProducts() {
     this.router.navigate(['/products']);
   }
+  openContact(){
+    this.router.navigate(['/contact']);
+  }
+   navigate(path: string) {
+    // small guard: if already on same route, still navigate to trigger refresh if needed
+    this.router.navigateByUrl(path);
+  }
   
 
 }

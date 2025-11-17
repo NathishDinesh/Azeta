@@ -2,8 +2,8 @@
 /* BASE HEADER STYLING */
 /* ========================= */
 .header-toolbar {
-  background-color: #1e0d0d;
-  color: #d7b46a;
+  background-color: black;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +23,7 @@
   font-family: 'Playfair Display', serif;
   font-size: clamp(1.4rem, 2.2vw, 2rem);
   letter-spacing: 3px;
-  color: #d7b46a;
+  color: white;
   white-space: nowrap;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .nav-links a {
-  color: #d7b46a;
+  color: white;
   text-decoration: none;
   font-weight: 400;
   font-size: clamp(0.95rem, 1.2vw, 1.1rem);

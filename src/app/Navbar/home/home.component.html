@@ -10,6 +10,45 @@
     <p>Azeta, Pollachi</p>
   </div>
 </section>
+<!-- ========================== -->
+<!-- SHOP RANGE (Mason-style) -->
+<!-- ========================== -->
+<section class="shop-range" role="region" aria-label="Shop the bean to bar range">
+  <div class="shop-range-inner">
+    <h2 class="shop-range-heading">SHOP THE BEAN-TO-BAR RANGE</h2>
+
+    <div class="shop-grid">
+      <a class="shop-tile" (click)="navigate('/products?category=couverture')" role="link" aria-label="Couverture bars">
+        <div class="shop-thumb">
+          <img src="assets/chocolates/couvertHome.png" alt="Couverture Chocolate" />
+        </div>
+        <div class="shop-label">COUVERTURE BARS</div>
+      </a>
+
+      <a class="shop-tile" (click)="navigate('/products?category=cacao')" role="link" aria-label="Cacao bars">
+        <div class="shop-thumb">
+          <img src="assets/chocolates/cacaoHome.png" alt="Cacao Products" />
+        </div>
+        <div class="shop-label">CACAO PRODUCTS</div>
+      </a>
+
+      <a class="shop-tile" (click)="navigate('/products?category=signature')" role="link" aria-label="Signature bars">
+        <div class="shop-thumb">
+          <img src="assets/chocolates/signatureHome.png" alt="Signature Bars" />
+        </div>
+        <div class="shop-label">SIGNATURE BARS</div>
+      </a> 
+
+      <!-- sample/4th tile -->
+      <!-- <a class="shop-tile" (click)="navigate('/products?category=gift')" role="link" aria-label="Gift sets">
+        <div class="shop-thumb">
+          <img src="assets/chocolates/pondichery-sample.jpg" alt="Gift sets" />
+        </div>
+        <div class="shop-label">GIFT SETS</div>
+      </a> -->
+    </div>
+  </div>
+</section>
 
 <!-- ========================== -->
 <!-- OUR STORY SECTION -->
@@ -20,7 +59,7 @@
   </div>
 
   <div class="story-text">
-    <h2>Our Story</h2>
+    <h2>What Makes Azeta Different?</h2>
     <p>
       Born in the heart of <strong>Pollachi</strong>, Azeta was founded with a single dream — 
       to bridge science, craftsmanship, and the rich soil of Tamil Nadu. 
@@ -49,17 +88,19 @@
 
 
 <!-- ========================== -->
-<!-- AZETA LOGO SECTION -->
+<!-- EXPORTS SECTION (NEW) -->
 <!-- ========================== -->
-<section class="logo-section">
-  <img src="assets/chocolates/azeta.jpeg" alt="Azeta Logo" />
+<section class="exports-section">
+  <div class="exports-inner">
+    <img src="assets/chocolates/azeta.jpeg" alt="Azeta Logo" class="exports-logo" />
+
+    <h2>“Looking to Import Premium Cacao?”</h2>
+    <p>
+      Supplying premium cacao, bean-to-bar chocolate and couverture products 
+      for global chocolate makers, bakeries and specialty brands.
+    </p>
+
+    <a class="btn-primary" (click)="openContact()">Reach Us</a>
+  </div>
 </section>
 
-<!-- ========================== -->
-<!-- BRAND LINE SECTION -->
-<!-- ========================== -->
-<section class="brand-line">
-  <h2>Crafted with Science & Soul</h2>
-  <p>Every bean, every batch — precision meets passion.</p>
-  <a class="btn-primary" routerLink="/products">Learn More</a>
-</section>

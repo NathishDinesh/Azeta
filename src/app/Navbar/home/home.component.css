@@ -3,13 +3,14 @@
   font-family: 'Poppins', Arial, sans-serif;
   color: #f8f1e7;
   background-color: #2b1e1e;
-  overflow-x: hidden !important; /* Prevent horizontal scrolling */
+  overflow-x: hidden !important;
   width: 100%;
 }
+
 :host, html, body {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;          /* ✅ stops all horizontal scrolls */
+  overflow-x: hidden;
 }
 
 /* ============================= */
@@ -17,7 +18,7 @@
 /* ============================= */
 .hero-full {
   position: relative;
-  width: 100vw;                /* ✅ force to viewport width */
+  width: 100vw;
   max-width: 100%;
   min-height: 100vh;
   display: flex;
@@ -36,7 +37,7 @@
   width: 100%;
   height: 100%;
   background: url('/assets/chocolates/chocobean4.jpg') no-repeat center center;
-  background-size: cover;       /* ✅ scales proportionally */
+  background-size: cover;
   object-fit: cover;
   z-index: 0;
 }
@@ -54,8 +55,6 @@
   padding: 0 5vw;
   animation: fadeIn 1.6s ease;
   max-width: 90vw;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
 .hero-center h1 {
@@ -64,7 +63,6 @@
   color: #c6a664;
   line-height: 1.2;
   margin: 0 0 0.5rem;
-  word-break: break-word;
 }
 
 .hero-center p {
@@ -80,8 +78,119 @@
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 /* ============================= */
-/* OUR STORY SECTION (BEIGE BG) */
+/* SHOP RANGE — MASON STYLE */
+/* ============================= */
+.shop-range {
+  background: #f4f4f2;
+  padding: 64px 6% 80px;
+  box-sizing: border-box;
+  width: 100%;
+  color: #1c1c1c;
+}
+
+.shop-range-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.shop-range-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #0f0f0f;
+  margin-bottom: 44px;
+}
+
+/* GRID */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 84px;
+  align-items: start;
+  justify-items: center;
+}
+
+/* TILE */
+.shop-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  max-width: 260px;
+  transition: opacity 180ms ease;
+}
+
+.shop-tile:hover .shop-label,
+.shop-tile:focus .shop-label {
+  opacity: 0.95;
+    text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+/* IMAGE */
+.shop-thumb {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
+}
+
+.shop-thumb img {
+  width: 100%;
+  height: auto;
+  max-width: 220px;
+  object-fit: contain;
+}
+
+/* LABEL */
+.shop-label {
+  margin-top: 28px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: #111;
+  text-align: center;
+  
+}
+
+/* RESPONSIVE GRID */
+@media (max-width: 880px) {
+  .shop-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+  }
+}
+
+@media (max-width: 575px) {
+  .shop-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .shop-thumb img {
+    max-width: 260px;
+  }
+  .shop-label {
+    letter-spacing: 6px;
+    font-size: 1rem;
+    margin-top: 16px;
+  }
+}
+
+/* ============================= */
+/* STORY SECTION */
 /* ============================= */
 .story-section {
   display: flex;
@@ -92,12 +201,11 @@
   gap: 40px;
   width: 100%;
   box-sizing: border-box;
-  background-color: #f3e9da; /* ✅ Elegant beige background */
+  background-color: white;
 }
 
 .story-image {
   flex: 1 1 300px;
-  text-align: center;
 }
 
 .story-image img {
@@ -106,7 +214,6 @@
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease;
-  height: auto;
 }
 
 .story-image img:hover {
@@ -115,24 +222,24 @@
 
 .story-text {
   flex: 1 1 300px;
-  color: #2b1e1e; /* ✅ Dark text for readability */
+  color: #2b1e1e;
   padding: 20px;
   max-width: 520px;
-  text-align: left;
 }
 
 .story-text h2 {
   font-family: 'Playfair Display', serif;
-  color: #a1783f; /* ✅ Warm golden tone */
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  margin-bottom: 12px;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #0f0f0f;
+  margin-bottom: 50px;
 }
 
 .story-text p {
   font-size: clamp(0.9rem, 1.1vw, 1rem);
   margin-bottom: 20px;
   line-height: 1.8;
-  color: #2b1e1e;
 }
 
 .btn-outline {
@@ -143,7 +250,6 @@
   text-decoration: none;
   border-radius: 4px;
   transition: all 0.3s ease;
-  font-size: 1rem;
 }
 
 .btn-outline:hover {
@@ -152,121 +258,14 @@
 }
 
 /* ============================= */
-/* AZETA LOGO SECTION (WHITE BG) */
+/* PASSION SECTION */
 /* ============================= */
-.logo-section {
-  text-align: center;
-  background-color: #f3e9da; /* ✅ Changed from #2b1e1e to white */
-  padding: 60px 0;
-  width: 100%;
-}
-
-.logo-section img {
-  width: clamp(160px, 25vw, 300px);
-  border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Softer shadow for light bg */
-  height: auto;
-  max-width: 100%;
-}
-
-/* ============================= */
-/* BRAND LINE SECTION (WHITE BG) */
-/* ============================= */
-.brand-line {
-  text-align: center;
-  padding: 60px 8%;
-  background-color: #f3e9da; /* ✅ Changed from dark to white */
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.brand-line h2 {
-  font-family: 'Playfair Display', serif;
-  color: #a1783f; /* ✅ Softer gold tone for white background */
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  margin-bottom: 12px;
-}
-
-.brand-line p {
-  margin-bottom: 20px;
-  opacity: 0.9;
-  font-size: clamp(0.9rem, 1vw, 1rem);
-  color: #2b1e1e;
-}
-
-.btn-primary {
-  display: inline-block;
-  background: #c6a664;
-  color: #2b1e1e;
-  padding: 12px 22px;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  font-size: 1rem;
-}
-
-.btn-primary:hover {
-  background: #2b1e1e;
-  color: #f8f1e7;
-}
-
-
-/* ============================= */
-/* RESPONSIVE FIXES */
-/* ============================= */
-@media (max-width: 992px) {
-  .story-section {
-    flex-direction: column;
-    text-align: center;
-    padding: 60px 6%;
-  }
-
-  .story-text {
-    text-align: center;
-    padding: 20px 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .hero-full {
-    min-height: 85vh;
-    background-position: center;
-  }
-
-  .hero-center {
-    padding: 0 8vw;
-  }
-
-  .hero-center h1 {
-    font-size: clamp(1.6rem, 6vw, 2.2rem);
-  }
-
-  .hero-center p {
-    font-size: clamp(0.9rem, 3vw, 1rem);
-  }
-
-  .story-image img {
-    max-width: 320px;
-  }
-
-  .brand-line {
-    padding: 40px 8%;
-  }
-
-  .btn-outline,
-  .btn-primary {
-    font-size: 0.9rem;
-    padding: 8px 16px;
-  }
-}
-/* Passion Section (NEW) */
 .passion-section {
   position: relative;
   background: url('/assets/chocolates/beanbar.jpg') center/cover no-repeat;
   color: #f8f1e7;
   text-align: center;
   padding: 100px 10%;
-  overflow: hidden;
 }
 
 .passion-overlay {
@@ -293,26 +292,105 @@
   font-size: 1.05rem;
   line-height: 1.7;
   margin-bottom: 24px;
-  opacity: 0.95;
 }
 
-@media (max-width: 768px) {
-  .passion-section {
-    padding: 60px 6%;
-  }
-  .passion-text h2 {
-    font-size: 1.8rem;
-  }
-  .passion-text p {
-    font-size: 0.95rem;
+.btn-primary {
+  display: inline-block;
+  background: #c6a664;
+  color: #2b1e1e;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #2b1e1e;
+  color: #f8f1e7;
+}
+
+/* ============================= */
+/* LOGO SECTION */
+/* ============================= */
+.logo-section {
+  text-align: center;
+  background-color: #f3e9da;
+  padding: 60px 0;
+}
+
+.logo-section img {
+  width: clamp(160px, 25vw, 300px);
+  border-radius: 8px;
+}
+
+/* ============================= */
+/* BRAND LINE */
+/* ============================= */
+.brand-line {
+  text-align: center;
+  padding: 60px 8%;
+  background-color: #f3e9da;
+}
+
+.brand-line h2 {
+  font-family: 'Playfair Display', serif;
+  color: #a1783f;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.brand-line p {
+  margin-bottom: 20px;
+  opacity: 0.9;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  color: #2b1e1e;
+}
+
+@media (max-width: 767px) {
+  .hero-full {
+    min-height: 85vh;
   }
 }
 
-
-/* Safe area for iPhones */
-@supports (padding: max(0px)) {
-  body {
-    padding-left: max(0px, env(safe-area-inset-left));
-    padding-right: max(0px, env(safe-area-inset-right));
+@media (max-width: 575px) {
+  .hero-full {
+    min-height: 60vh !important;
   }
 }
+
+/* ============================= */
+/* EXPORTS SECTION (NEW) */
+/* ============================= */
+.exports-section {
+  background-color: white;
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.exports-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.exports-logo {
+  width: 180px;
+  max-width: 40vw;
+  margin-bottom: 24px;
+  border-radius: 10px;
+}
+
+.exports-section h2 {
+  font-family: 'Playfair Display', serif;
+  color: black;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.exports-section p {
+  color: #2b1e1e;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 24px;
+  line-height: 1.7;
+}
+

@@ -1,31 +1,33 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';   // ✅ Gives access to *ngFor, *ngIf
-import { RouterModule } from '@angular/router';   // ✅ Optional: for routerLink if used
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [CommonModule, RouterModule],  // ✅ Must include CommonModule for *ngFor
+  imports: [CommonModule, RouterModule],
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
   couverture = [
-    { name: '100% Dark Couverture', desc: 'Intense dark flavour', image: '/assets/chocolates/couvert.jpeg' },
-    { name: '75% Dark Couverture', desc: 'Per-fermentation to perfection', image: '/assets/chocolates/couvert.jpeg'},
-    { name: '65% Dark Couverture', desc: 'Easy, natural reveries', image: '/assets/chocolates/couvert.jpeg'},
-    { name: '55% Dark Couverture', desc: 'Bold, bittersweet taste', image: '/assets/chocolates/couvert.jpeg' }
+    { id: 'couv-70', name: '75% Dark Couverture', image: '/assets/chocolates/couvertHome.png' },
+    { id: 'couv-55', name: '55% Dark Couverture', image: '/assets/chocolates/couvert55.png' },
+    { id: 'couv-45', name: '45% Dark Couverture', image: '/assets/chocolates/couvert45.png' },
+    { id: 'couv-36', name: '36% Milk Couverture', image: '/assets/chocolates/couvert45.png' }
   ];
 
   cacao = [
-    { name: 'Cacao chocolate Butter', desc: 'Pure unprocessed cacao', image: '/assets/chocolates/glassjar3.png' },
-    { name: 'Cacao chocolate Powder', desc: 'Rich, natural essence', image: '/assets/chocolates/glassjar1.png' },
-    { name: 'Cacao chocolate Nibs', desc: 'Crunchy roasted nibs', image: '/assets/chocolates/glassjar2.png' }
+    { id: 'cacao-butter', name: 'Cacao Butter', image: '/assets/chocolates/cacaoHome.png' },
+    { id: 'cacao-powder', name: 'Cacao Powder', image: '/assets/chocolates/cacaoHome.png' }
   ];
 
-  signature = [
-    { name: 'Intense Dark Chocolate', desc: 'Velvety smooth with nuts', image: '/assets/chocolates/milk.jpg' },
-    { name: 'Zesty Orange Chocolate', desc: 'Silky sweet indulgence', image: '/assets/chocolates/milk.jpg' },
-    { name: ' Coconut Milk Chocolate', desc: 'Bittersweet harmony', image: '/assets/chocolates/milk.jpg' }
-  ];
+  // Smooth-scroll helper
+  scrollTo(id: string) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // optionally adjust for sticky header offset:
+    // window.scrollBy(0, -80);
+  }
 }
