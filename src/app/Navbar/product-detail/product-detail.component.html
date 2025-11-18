@@ -1,0 +1,42 @@
+<div class="product-detail-page" *ngIf="product; else notfound">
+    <button class="back-btn" (click)="goBack()">← Back to products</button>
+
+  <div class="container">
+
+
+    <div class="detail-wrapper">
+
+      <!-- LEFT IMAGE -->
+      <div class="image-box">
+        <img [src]="product.image" [alt]="product.name" />
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="text-box">
+        <h1 class="title">{{ product.name }}</h1>
+
+        <p class="short-desc" *ngIf="product.desc">
+          {{ product.desc }}
+        </p>
+
+        <div class="long-desc" *ngIf="product.longDesc?.length">
+          <ul>
+            <li *ngFor="let line of product.longDesc">
+              {{ line }}
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<ng-template #notfound>
+  <div class="product-detail-page notfound">
+    <div class="container">
+      <p>Product not found.</p>
+      <button class="back-btn" (click)="goBack()">Back to Products</button>
+    </div>
+  </div>
+</ng-template>

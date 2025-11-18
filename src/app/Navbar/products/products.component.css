@@ -124,25 +124,47 @@
   .mason-grid { gap: 48px; }
   .item-title { letter-spacing: 4px; }
 }
+/* Mobile tweak: two columns, comfortable gutters and readable titles */
 @media (max-width: 576px) {
   .hero-banner { padding: 2rem 1rem; }
 
-  /* Make the masonry row form two columns */
+  /* keep grid centered but with internal horizontal padding so items never touch screen edge */
   .mason-grid {
-    gap: 20px;              /* smaller gap on mobile */
-    justify-content: space-between;
-  }
-
-  .mason-item {
-    flex: 0 0 calc(50% - 10px); /* two items per row, subtract half gap */
-    max-width: calc(50% - 10px);
+    gap: 20px;
+    justify-content: center;      /* center the two-column group */
+    padding: 0 14px;              /* safe horizontal gutter for both sides */
     box-sizing: border-box;
-    padding: 0 6px;         /* optional inner spacing */
   }
 
-  .mason-item img { height: 140px; } /* smaller images for mobile */
-  .item-title { letter-spacing: 3px; font-size: 0.9rem; }
+  /* two items per row with a reliable gutter calculation */
+  .mason-item {
+    flex: 0 0 calc(50% - 14px);   /* 50% minus half the horizontal padding (approx) */
+    max-width: calc(50% - 14px);
+    box-sizing: border-box;
+    padding: 0 6px;               /* small inner spacing */
+    margin: 0;
+  }
+
+  /* slightly smaller images to reduce vertical footprint */
+  .mason-item img {
+    height: 140px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* reduce title letter-spacing and allow wrapping for readability */
+  .item-title {
+    letter-spacing: 2px;          /* less aggressive spacing on mobile */
+    font-size: 0.88rem;
+    line-height: 1.15;
+    white-space: normal;          /* allow break/wrap */
+    padding: 8px 6px 0;           /* small top padding so title sits a little away from the image */
+    word-break: break-word;
+  }
+
   .section-title { font-size: 1.5rem; letter-spacing: 2px; }
   .section-subtitle { font-size: 0.9rem; }
 }
+
 
