@@ -33,21 +33,32 @@
   box-sizing: border-box;
 }
 
-/* grid layout: fixed left column for image, flexible right column for text */
+/* grid layout: fixed left column for image, flexible right column for text
+   + entrance animation */
 .product-detail-page .detail-wrapper {
   display: grid;
   grid-template-columns: 320px minmax(520px, 1fr); /* fixed left column, flexible right */
   gap: 190px;                                       /* comfortable gap between image & text */
   align-items: start;
   align-content: start;
+
+  /* ✨ fade + slide in on first render */
+  opacity: 0;
+  transform: translateY(24px);
+  animation: detailFadeIn 480ms ease-out 120ms forwards;
 }
 
-/* image column: keep image aligned left inside column with small inner padding */
+/* image column: keep image aligned left */
 .product-detail-page .image-box {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   padding-left: 8px;
+
+  /* subtle stagger so image pops just after wrapper */
+  opacity: 0;
+  transform: translateX(-18px) scale(0.97);
+  animation: imagePopIn 480ms cubic-bezier(.2,.7,.3,1) 180ms forwards;
 }
 
 /* actual image size & appearance */
@@ -65,6 +76,11 @@
 .product-detail-page .text-box {
   padding-top: 6px;
   max-width: 760px;
+
+  /* text appears slightly after image */
+  opacity: 0;
+  transform: translateX(18px);
+  animation: textFadeIn 420ms ease-out 220ms forwards;
 }
 
 /* Title and description */
@@ -93,6 +109,36 @@
   color: #333;
   line-height: 1.7;
   font-size: 1rem;
+}
+
+/* ========================= */
+/*  KEYFRAMES                */
+/* ========================= */
+
+@keyframes detailFadeIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes imagePopIn {
+  from { opacity: 0; transform: translateX(-18px) scale(0.97); }
+  to   { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+@keyframes textFadeIn {
+  from { opacity: 0; transform: translateX(18px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .product-detail-page .detail-wrapper,
+  .product-detail-page .image-box,
+  .product-detail-page .text-box {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 
 /* make sure the back button does not overlap image on very small screens */
