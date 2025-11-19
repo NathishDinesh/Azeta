@@ -20,7 +20,7 @@
   position: relative;
   width: 100vw;
   max-width: 100%;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,13 +78,13 @@
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
+/* ============================= */
+/* SHOP RANGE — CLEAN + PREMIUM */
+/* ============================= */
 
-/* ============================= */
-/* SHOP RANGE — MASON STYLE */
-/* ============================= */
 .shop-range {
   background: #f4f4f2;
-  padding: 64px 6% 80px;
+  padding: 40px 6% 80px;
   box-sizing: border-box;
   width: 100%;
   color: #1c1c1c;
@@ -105,56 +105,85 @@
   margin-bottom: 44px;
 }
 
+/* ============================= */
 /* GRID */
+/* ============================= */
 .shop-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 84px;
   align-items: start;
   justify-items: center;
+  overflow: visible !important;  /* prevent shadow clipping */
 }
 
+/* ============================= */
 /* TILE */
+/* ============================= */
 .shop-tile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-decoration: none;
-  color: inherit;
   width: 100%;
   max-width: 260px;
-  transition: opacity 180ms ease;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  background: transparent !important;
+  transform-origin: center center;
+  -webkit-transform: translateZ(0);
+  will-change: transform, box-shadow;
+  transition: transform 280ms cubic-bezier(.2,.9,.2,1), 
+              box-shadow 280ms cubic-bezier(.2,.9,.2,1),
+              opacity 220ms ease;
 }
 
-.shop-tile:hover .shop-label,
-.shop-tile:focus .shop-label {
-  opacity: 0.95;
-    text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 2px;
+/* lift on hover */
+.shop-tile:hover,
+.shop-tile:focus,
+.shop-tile:focus-within {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  z-index: 20;
 }
 
+/* pressed feel */
+.shop-tile:active {
+  transform: translateY(-3px) scale(0.99);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* ============================= */
 /* IMAGE */
+/* ============================= */
 .shop-thumb {
   width: 100%;
-  height: auto;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background: transparent;
-  border-radius: 0;
-  overflow: visible;
-  box-shadow: none;
+  background: transparent !important;
 }
 
 .shop-thumb img {
   width: 100%;
-  height: auto;
   max-width: 220px;
   object-fit: contain;
+  background: transparent !important;
+  border-radius: 0;
+  transition: transform 420ms cubic-bezier(.2,.9,.2,1),
+              filter 320ms ease;
+  will-change: transform, filter;
 }
 
+/* subtle zoom */
+.shop-tile:hover .shop-thumb img,
+.shop-tile:focus .shop-thumb img {
+  transform: scale(1.06);
+  filter: contrast(1.02) saturate(1.03);
+}
+
+/* ============================= */
 /* LABEL */
+/* ============================= */
 .shop-label {
   margin-top: 28px;
   font-family: 'Poppins', sans-serif;
@@ -162,11 +191,31 @@
   letter-spacing: 7px;
   text-transform: uppercase;
   color: #111;
-  text-align: center;
-  
+  transition: color 220ms ease, letter-spacing 220ms ease;
+  text-decoration: none !important;
+  text-decoration-color: transparent !important;
 }
 
-/* RESPONSIVE GRID */
+.shop-tile:hover .shop-label,
+.shop-tile:focus .shop-label {
+  color: #111;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-color: currentColor;
+}
+
+/* ============================= */
+/* GRID HOVER FADE EFFECT */
+/* ============================= */
+.shop-grid:hover .shop-tile:not(:hover):not(:focus-within) {
+  opacity: 0.78;
+  transform: none;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
 @media (max-width: 880px) {
   .shop-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -179,15 +228,27 @@
     grid-template-columns: 1fr;
     gap: 28px;
   }
+
   .shop-thumb img {
     max-width: 260px;
   }
+
   .shop-label {
     letter-spacing: 6px;
     font-size: 1rem;
-    margin-top: 16px;
   }
 }
+
+/* Reduce motion support */
+@media (prefers-reduced-motion: reduce) {
+  .shop-tile,
+  .shop-thumb img,
+  .shop-label {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
 
 /* ============================= */
 /* STORY SECTION */
@@ -197,7 +258,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 80px 10%;
+  padding: 40px 10%;
   gap: 40px;
   width: 100%;
   box-sizing: border-box;
@@ -244,8 +305,8 @@
 
 .btn-outline {
   display: inline-block;
-  color: #a1783f;
-  border: 1px solid #a1783f;
+  color: black;
+  border: 1px solid black;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 4px;
@@ -362,7 +423,7 @@
 /* ============================= */
 .exports-section {
   background-color: white;
-  padding: 70px 8%;
+  padding: 40px 8%;
   text-align: center;
 }
 

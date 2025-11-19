@@ -13,19 +13,17 @@ export class HomeComponent {
     this.router.navigate(['/about'],{fragment:'beanFermentation'});
   }
 
-  openProducts() {
-    this.router.navigate(['/products']);
-  }
+ openCouverture() {
+  this.router.navigate(['/products'], { fragment: 'couverture' });
+}
+openCacao() {
+  this.router.navigate(['/products'], { fragment: 'cacao' });
+}
   openContact(){
     this.router.navigate(['/contact'],{fragment:'contactPage'});
   }
   openStory() {
   this.router.navigate(['/about'], { fragment: 'storySection' });
 }
-   navigate(path: string) {
-    // small guard: if already on same route, still navigate to trigger refresh if needed
-    this.router.navigateByUrl(path);
-  }
-  
 
 }

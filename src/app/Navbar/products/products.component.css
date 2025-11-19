@@ -97,7 +97,10 @@
   object-fit: contain;
   display: block;
   margin: 0 auto;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+
 }
+
 
 .item-title {
   margin-top: 1rem;
@@ -110,7 +113,7 @@
 }
 
 /* underline on hover to indicate click */
-.mason-item:hover .item-title { text-decoration: underline; cursor: pointer; }
+/* .mason-item:hover .item-title { text-decoration: underline; cursor: pointer; } */
 
 /* make the two sections visually balanced:
    - left (couverture) will naturally appear first

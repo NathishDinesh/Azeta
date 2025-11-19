@@ -22,11 +22,11 @@
       <!-- <div class="section-subtitle">From Pure Cacao to Perfect Bars</div> -->
 
       <div class="mason-grid">
-  <a class="mason-item" *ngFor="let item of couverture"
+  <div class="mason-item" *ngFor="let item of couverture"
      [routerLink]="['/product', item.id]" role="link" [attr.aria-label]="item.name">
     <img [src]="item.image" [alt]="item.name" />
     <div class="item-title">{{ item.name }}</div>
-  </a>
+      </div>
 </div>
     </div>
   </section>
@@ -42,11 +42,11 @@
       <h3 class="section-title">Cacao Products</h3>
 
       <div class="mason-grid">
-        <a class="mason-item" *ngFor="let item of cacao"
+        <div class="mason-item" *ngFor="let item of cacao"
           [routerLink]="['/product', item.id]" role="link" [attr.aria-label]="item.name">
           <img [src]="item.image" [alt]="item.name" />
           <div class="item-title">{{ item.name }}</div>
-        </a>
+        </div>
       </div>
     </div>
   </section>

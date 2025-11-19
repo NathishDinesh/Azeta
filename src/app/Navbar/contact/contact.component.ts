@@ -29,9 +29,9 @@ export class ContactComponent implements OnInit {
           el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
           // optional: if you have a sticky header, offset slightly:
-          // const headerOffset = 80;
-          // const elementPosition = el.getBoundingClientRect().top + window.pageYOffset;
-          // window.scrollTo({ top: elementPosition - headerOffset, behavior: 'smooth' });
+          const headerOffset = 60;
+          const elementPosition = el.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({ top: elementPosition - headerOffset, behavior: 'smooth' });
         }
       }, 30);
     });
