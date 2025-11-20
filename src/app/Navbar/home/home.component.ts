@@ -25,5 +25,8 @@ openCacao() {
   openStory() {
   this.router.navigate(['/about'], { fragment: 'storySection' });
 }
+openSustainFarm(){
+  this.router.navigate(['/about'], { fragment: 'sustainFarm' });
+}
 
 }

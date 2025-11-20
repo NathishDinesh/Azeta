@@ -16,7 +16,7 @@
 .hero-content { max-width: 1200px; margin: 0 auto; }
 
 .hero-quote {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', serif;
   font-size: 1.9rem;
   color: #111;
   margin: 0 0 0.6rem;
@@ -56,7 +56,7 @@
 
 /* Section title (Mason-like) */
 .section-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', serif;
   font-size: 20px;
   color: #111;
   margin: 0 0 6px;

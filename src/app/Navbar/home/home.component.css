@@ -58,7 +58,7 @@
 }
 
 .hero-center h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', serif;
   font-size: clamp(1.8rem, 6vw, 4rem);
   color: #c6a664;
   line-height: 1.2;
@@ -97,7 +97,7 @@
 }
 
 .shop-range-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', serif;
   font-size: 1.6rem;
   letter-spacing: 6px;
   text-transform: uppercase;
@@ -258,8 +258,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 40px 10%;
-  gap: 40px;
+  padding: 24px 10%;
+  gap: 28px;
   width: 100%;
   box-sizing: border-box;
   background-color: white;
@@ -271,7 +271,7 @@
 
 .story-image img {
   width: 100%;
-  max-width: 440px;
+  max-width: 360px;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease;
@@ -289,12 +289,12 @@
 }
 
 .story-text h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', serif;
   font-size: 1.6rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #0f0f0f;
-  margin-bottom: 50px;
+  margin-bottom: 26px;
 }
 
 .story-text p {
@@ -343,7 +343,7 @@
 }
 
 .passion-text h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', serif;
   color: #c6a664;
   font-size: 2.4rem;
   margin-bottom: 16px;
@@ -409,7 +409,7 @@ ease;
 }
 
 .brand-line h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', serif;
   color: #a1783f;
   font-size: clamp(1.8rem, 3vw, 2.4rem);
 }
@@ -437,8 +437,8 @@ ease;
 /* EXPORTS SECTION (NEW) */
 /* ============================= */
 .exports-section {
-  background-color: white;
-  padding: 40px 8%;
+  background-color: #f4f4f2;
+  padding: 10px 8%;
   text-align: center;
 }
 
@@ -448,14 +448,14 @@ ease;
 }
 
 .exports-logo {
-  width: 180px;
-  max-width: 40vw;
-  margin-bottom: 24px;
+  width: 160px;
+  max-width: 30vw;
+  margin-bottom: 12px;
   border-radius: 10px;
 }
 
 .exports-section h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', serif;
   color: black;
   font-size: clamp(1.8rem, 3vw, 2.4rem);
   margin-bottom: 16px;
@@ -470,3 +470,99 @@ ease;
   line-height: 1.7;
 }
 
+
+/* Sustainable Cocoa Cultivation (insert above shop-range styles) */
+.sustainable-section {
+  background: #ffffff;
+  padding: 56px 6% 36px;
+  box-sizing: border-box;
+  color: #1d1d1d;
+}
+
+.sustainable-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  align-content: center;
+}
+
+/* clickable image area */
+.sustainable-media {
+  display: block;
+  text-decoration: none;
+  max-width: 520px;
+  margin: 0 auto;
+  transition: transform 320ms cubic-bezier(.2,.9,.2,1), box-shadow 320ms ease;
+  will-change: transform, box-shadow;
+}
+.sustainable-media img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+
+  box-shadow: 0 12px 36px rgba(0,0,0,0.08);
+  display: block;
+}
+/* .sustainable-media:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 22px 48px rgba(0,0,0,0.14);
+} */
+
+/* text block */
+.sustainable-text {
+  padding: 8px 6px;
+  max-width: 620px;
+}
+.sustainable-text h2 {
+  font-family: 'Poppins', serif;
+  font-size: 1.8rem;
+  margin: 0 0 14px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #0f0f0f;
+}
+.sustainable-text p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 0 12px;
+}
+
+/* CTA styling */
+/* .sustainable-cta .btn-outline {
+  display: inline-block;
+  color: #a1783f;
+  border: 1px solid #a1783f;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 220ms ease, color 220ms ease, transform 220ms ease;
+}
+.sustainable-cta .btn-outline:hover {
+  background: #a1783f;
+  color: #fff;
+  transform: translateY(-3px);
+} */
+
+/* flip layout on smaller screens: image first on top, text below */
+@media (max-width: 880px) {
+  .sustainable-inner {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 0 6%;
+  }
+  .sustainable-media { max-width: 100%; }
+  .sustainable-text { padding: 0; text-align: left; }
+  .sustainable-text h2 { font-size: 1.45rem; }
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: #e0dcd8;
+  /* margin: 30px 0 50px; */
+}

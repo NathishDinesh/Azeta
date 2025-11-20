@@ -35,7 +35,7 @@
   padding: 0 18px;
 }
 .hero-text h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', serif;
   font-weight: 600;
   font-size: clamp(2rem, 6vw, 3rem);
   color: #ffffff;
@@ -58,12 +58,16 @@
   background: #ffffff;
   color: #111;
   box-sizing: border-box;
+  align-items: stretch !important;
 }
 
 /* monochrome cards */
 /* ALMOND / BADAM CARDS */
 .info-card {
   text-align: center;
+  height: 100;
+  justify-content: center;
+  min-height: 100px;
   background: #ebc688c7;   /* warm almond */
   color: #4C3A2B;        /* deep cocoa brown text */
   border-radius: 10px;
@@ -74,7 +78,7 @@
 }
 
 .info-card h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', serif;
   color: #3C2C20;
   margin-bottom: 8px;
 }
