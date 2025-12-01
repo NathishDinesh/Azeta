@@ -12,21 +12,63 @@
       </div>
 
       <!-- RIGHT CONTENT -->
-      <div class="text-box">
-        <h1 class="title">{{ product.name }}</h1>
+     <!-- RIGHT CONTENT -->
+<!-- RIGHT CONTENT -->
+<div class="text-box">
 
-        <p class="short-desc" *ngIf="product.desc">
-          {{ product.desc }}
-        </p>
+  <!-- Big title: use desc (55% Dark Couverture Chocolate); fallback to name -->
+  <h1 class="title" *ngIf="product.desc; else nameTitle">
+    {{ product.desc }}
+  </h1>
+  <ng-template #nameTitle>
+    <h1 class="title">{{ product.name }}</h1>
+  </ng-template>
 
-        <div class="long-desc" *ngIf="product.longDesc?.length">
-          <ul>
-            <li *ngFor="let line of product.longDesc">
-              {{ line }}
-            </li>
-          </ul>
-        </div>
-      </div>
+  <!-- hero line in gold -->
+  <p class="hero-line" *ngIf="product.heroLine">
+    {{ product.heroLine }}
+  </p>
+
+  <!-- intro paragraphs -->
+  <p class="intro-text" *ngIf="product.intro">
+    {{ product.intro }}
+  </p>
+
+  <p class="highlight-text" *ngIf="product.highlight">
+    {{ product.highlight }}
+  </p>
+
+  <!-- the “Whether you are creating…” line -->
+  <p class="bridge-text" *ngIf="product.bridge">
+    {{ product.bridge }}
+  </p>
+
+  <!-- generic sections for all couverture bars -->
+  <section class="detail-block" *ngFor="let section of product.sections">
+    <h3 class="block-title">{{ section.title }}</h3>
+
+    <p class="block-text" *ngIf="section.text">
+      {{ section.text }}
+    </p>
+
+    <ul class="block-list" *ngIf="section.bullets?.length">
+      <li *ngFor="let item of section.bullets">
+        {{ item }}
+      </li>
+    </ul>
+  </section>
+
+  <!-- fallback for old products using longDesc only (e.g. cacao) -->
+  <div class="long-desc" *ngIf="!product.sections?.length && product.longDesc?.length">
+    <ul>
+      <li *ngFor="let line of product.longDesc">
+        {{ line }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+
 
     </div>
   </div>
