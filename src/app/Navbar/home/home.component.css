@@ -110,11 +110,13 @@
 /* ============================= */
 .shop-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 84px;
-  align-items: start;
+  grid-template-columns: repeat(2, max-content); /* shrink columns to content */
+  justify-content: center;                       /* center the 2 tiles group */
   justify-items: center;
-  overflow: visible !important;  /* prevent shadow clipping */
+  column-gap: 64px;                              /* horizontal space between tiles */
+  row-gap: 60px;                                    /* no vertical gap needed here */
+  align-items: start;
+  overflow: visible !important;
 }
 
 /* ============================= */

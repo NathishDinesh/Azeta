@@ -2,7 +2,7 @@
 
 /* page wrapper */
 .product-detail-page {
-  background: #f8f4f0;                 /* soft off-white */
+  background: white;                 /* soft off-white */
   color: #222;
   font-family: 'Poppins', Arial, sans-serif;
   padding: 48px 0;                    /* vertical space */
@@ -174,3 +174,95 @@
   .product-detail-page > .back-btn,
   .product-detail-page .back-btn { margin-left: 16px; font-size: 0.92rem; }
 }
+.product-detail-page .hero-line {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.product-detail-page .intro-text,
+.product-detail-page .highlight-text {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.product-detail-page .highlight-text {
+  font-style: italic;
+}
+
+.product-detail-page .detail-block {
+  margin-top: 1.3rem;
+}
+
+.product-detail-page .block-title {
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.product-detail-page .block-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0 0 0.4rem;
+}
+
+.product-detail-page .block-list {
+  padding-left: 18px;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+/* title already black via .title – keep as-is */
+
+/* gold hero line */
+.product-detail-page .hero-line {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  color: #b88a3c;        /* warm golden tone */
+}
+
+/* main copy */
+.product-detail-page .intro-text,
+.product-detail-page .highlight-text,
+.product-detail-page .bridge-text {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin-bottom: 0.55rem;
+  color: #333;
+}
+
+.product-detail-page .highlight-text {
+  font-style: italic;
+}
+
+/* sections */
+.product-detail-page .detail-block {
+  margin-top: 1.3rem;
+}
+
+.product-detail-page .block-title {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: #333;
+}
+
+.product-detail-page .block-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0 0 0.4rem;
+}
+
+.product-detail-page .block-list {
+  padding-left: 18px;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
