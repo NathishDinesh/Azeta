@@ -89,7 +89,7 @@
   margin-top: 1.7rem;
 }
 .cacao-section .mason-grid {
-  grid-template-columns: repeat(2, minmax(180px, 1fr)); /* 2 centered columns */
+  grid-template-columns: repeat(4, minmax(180px, 1fr)); /* 4 centered columns */
   justify-content: center;
   gap: 10px;  /* adjust spacing as you like */
 }
@@ -104,7 +104,7 @@
 }
 
 .cacao-section .mason-grid {
-  grid-template-columns: repeat(2, auto);
+  /* grid-template-columns: repeat(2, auto); */
   justify-content: center;
   justify-items: center;
   gap: 40px;
@@ -203,6 +203,9 @@
     justify-items: center;                  /* center each grid item in its column */
     align-items: start;
     margin-top: 1.2rem;
+  }
+    .cacao-section .mason-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 x 2 layout */
   }
 
   .mason-item {
