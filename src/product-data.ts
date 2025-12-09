@@ -27,7 +27,7 @@ export const COUVERTURE: Product[] = [
   {
     id: 'couv-45',
     name: '45% Bar',
-    image: '/assets/chocolates/45Couvert .png',
+    image: '/assets/chocolates/45DarkCo.jpg',
 
     // BIG title on detail page
     desc: '45% Dark Couverture',
@@ -66,7 +66,7 @@ export const COUVERTURE: Product[] = [
   {
     id: 'couv-55',
     name: '55% Bar',
-    image: '/assets/chocolates/couvert55.png',
+    image: '/assets/chocolates/55DarkCo.PNG',
 
     // this will be your main black H1
     desc: '55% Dark Couverture ',
@@ -107,7 +107,7 @@ export const COUVERTURE: Product[] = [
   {
     id: 'couv-70',
     name: '70% Bar',
-    image: '/assets/chocolates/70Couvert.png',
+    image: '/assets/chocolates/70DarkCo.PNG',
 
     // BIG title on the detail page
     desc: '70% Dark Couverture',
@@ -155,7 +155,7 @@ export const COUVERTURE: Product[] = [
   {
     id: 'couv-85',
     name: '85% Bar',
-    image: '/assets/chocolates/85Couvert.png',
+    image: '/assets/chocolates/85DarkCo.PNG',
 
     // Big title on detail page
     desc: '85% Dark Couverture',
@@ -204,7 +204,7 @@ export const COUVERTURE: Product[] = [
   {
     id: 'couv-36',
     name: '35% Milk Bar',
-    image: '/assets/chocolates/couvert45.png',
+    image: '/assets/chocolates/35MilkCo.PNG',
 
     // Big title on detail page
     desc: '35% Milk Couverture',
@@ -253,7 +253,7 @@ export const COUVERTURE: Product[] = [
   {
     id: 'couv-37',
     name: '45% Milk Bar',
-    image: '/assets/chocolates/milkCouvert.png',
+    image: '/assets/chocolates/45MilkCo.PNG   ',
 
     // Big title on detail page
     desc: '45% Milk Couverture',
@@ -304,31 +304,195 @@ export const COUVERTURE: Product[] = [
 
 export const CACAO: Product[] = [
   {
-    id: 'cacao-butter', name: 'Natural Deodonised Cacao Butter', image: '/assets/chocolates/cacaoHome.png', desc: 'Pure, refined couverture for professionals.',
-    longDesc: [
-      'Pure, Refined, Uncompromised',
-      'Crafted for artisans who value elegance.',
-      'Controlled precision roasting.',
-      'Roasting Profile: Medium Roast — soft warm undertones.',
-      'Aroma: Naturally expressive cocoa, deep complementing cocoa depth.',
-      'Palate: Rounded cocoa, delicate sweetness.',
-      'No additives, no lecithin — just pure chocolate.',
-      'Craftsmanship standard.'
-    ]
-  },
-  {
-    id: 'cacao-powder', name: 'Natural Cacao Powder', image: '/assets/chocolates/cacaoHome.png', desc: 'Pure, refined couverture for professionals.',
-    longDesc: [
-      'Pure, Refined, Uncompromised',
-      'Crafted for artisans who value elegance.',
-      'Controlled precision roasting.',
-      'Roasting Profile: Medium Roast — soft warm undertones.',
-      'Aroma: Naturally expressive cocoa, deep complementing cocoa depth.',
-      'Palate: Rounded cocoa, delicate sweetness.',
-      'No additives, no lecithin — just pure chocolate.',
-      'Craftsmanship standard.'
-    ]
-  }
+  id: 'cacao-butter',
+  name: 'Natural Non-Deodorised Cacao Butter',
+  image: '/assets/chocolates/cocoaBut.jpg',
+
+  // BIG title on detail page
+  desc: 'Natural Non-Deodorised Cacao Butter',
+
+  // Golden hero line
+  heroLine: 'Pure, Natural Cocoa Butter',
+
+  // Subtitle line
+  // intro: 'The Natural Essence of Cocoa — Pure & Untouched.',
+
+  // Main intro paragraph
+  highlight:
+    'Our Natural Non-Deodorised Cocoa Butter is a premium, unrefined vegetable fat extracted from high-quality cocoa beans. Unlike deodorised versions, this butter retains its rich, authentic chocolate aroma and natural golden color. It is packed with antioxidants and nourishing fatty acids, making it ideal for skincare, haircare, and artisanal chocolate production',
+
+  // Optional connecting sentence
+  bridge: '',
+
+  sections: [
+    {
+      title: '⭐ BENEFITS',
+      bullets: [
+        'Deeply moisturises and softens skin',
+        'Supports elasticity, smoothness, and natural glow',
+        'Rich in antioxidants and nourishing fatty acids',
+        'Ideal for soaps, balms, lotions, and body butters',
+        'Suitable for food, cosmetic & pharmaceutical applications'
+      ]
+    },
+    {
+      title: '✨ SUGGESTED USES',
+      bullets: [
+        'Body butters & lotions',
+        'Lip balms & massage bars',
+        'Hair conditioners & masks',
+        'Artisanal chocolate & confectionery',
+        'Baking, glazing & gourmet applications'
+      ]
+    }
+  ]
+},
+
+{
+  id: 'cacao-powder',
+  name: 'Natural Cacao Powder',
+  image: '/assets/chocolates/cocoaPowder.jpeg',
+
+  // BIG title on detail page
+  desc: 'Natural Cacao Powder',
+
+  // Golden hero line
+  heroLine: 'Rich. Aromatic. Pure Cocoa Depth.',
+
+  // Subtitle line (optional)
+  // intro: '',
+
+  // Main intro paragraph
+  highlight:
+    'Natural Cocoa Powder is crafted by pressing roasted cocoa beans to remove a portion of their cocoa butter, then finely grinding the remaining solids. It retains its natural acidity, deep chocolate aroma, and rich brown color — perfect for baking, beverages, desserts, and even cosmetic formulations requiring pure cocoa richness.',
+
+  // Optional connecting sentence
+  bridge: '',
+
+  sections: [
+    {
+      title: '🌿 TYPICAL COMPOSITION',
+      bullets: [
+        'Cocoa Butter: ~10–12% (High-fat variants: 20–22%)',
+        'Cocoa Solids: ~88–90%',
+        'Moisture: <5%',
+        'Natural pH: ~5.2–5.8',
+        'Rich in natural antioxidants & polyphenols'
+      ]
+    },
+    {
+      title: '✨ SUGGESTED USES',
+      bullets: [
+        'Cakes, brownies, biscuits & pastries',
+        'Hot chocolate, smoothies & beverages',
+        'Chocolate coatings & confectionery',
+        'Ice creams & dairy-based desserts',
+        'Cosmetic scrubs, masks & natural soaps'
+      ]
+    }
+  ]
+},
+
+{
+  id: 'cacao-nibs',
+  name: 'Cacao Nibs',
+  image: '/assets/chocolates/cocoaNibs.jpeg',
+
+  // BIG title on detail page
+  desc: 'Premium Roasted Cacao Nibs',
+
+  // Golden hero line
+  heroLine: 'Pure. Crunchy. Naturally Intense.',
+
+  // Subtitle line (optional)
+  // intro: '',
+
+  // Main intro paragraph
+  highlight:
+    'Cacao Nibs are small pieces of crushed, roasted cocoa beans — minimally processed to retain their authentic chocolate aroma, bold flavor, and nutrient-rich profile. They offer natural crunch, antioxidants, and pure cocoa intensity, perfect for gourmet foods, desserts, snacks, and artisanal chocolate applications.',
+
+  // Optional connecting sentence
+  bridge: '',
+
+  sections: [
+    {
+      title: '🌿 TYPICAL COMPOSITION',
+      bullets: [
+        'Cocoa Butter: ~45–55%',
+        'Protein: ~12–15%',
+        'Dietary Fibre: ~10–15%',
+        'Carbohydrates: ~5–10%',
+        'Moisture: <5%',
+        'Natural antioxidants (polyphenols)'
+      ]
+    },
+    {
+      title: '✨ SUGGESTED USES',
+      bullets: [
+        'Bakery & dessert toppings',
+        'Artisanal chocolate making',
+        'Trail mixes & healthy snacks',
+        'Smoothies & nutritional blends',
+        'Cereals, granola & energy bars'
+      ]
+    }
+  ]
+},
+
+  
+{
+  id: 'cacao-mass',
+  name: 'Natural Cocoa Mass',
+  image: '/assets/chocolates/cocoaMass.jpeg',
+
+  // BIG title on detail page
+  desc: '100% Natural Cocoa Mass',
+
+  // Golden hero line
+  heroLine: 'Pure Cocoa Mass. Unmatched Intensity.',
+
+  // Subtitle line (optional)
+  // intro: '',
+
+  // Main intro paragraph
+  highlight:
+    'Natural Cocoa Mass is a minimally processed, 100% cocoa ingredient made from roasted and finely ground cocoa beans. Containing both cocoa solids and cocoa butter in their natural proportions, it delivers intense chocolate flavor, deep color, and exceptional richness — ideal for premium chocolate crafting, baking, beverages, and cosmetic formulations.',
+
+  // Optional connecting sentence
+  bridge: '',
+
+  sections: [
+    {
+      title: '🌿 TYPICAL COMPOSITION',
+      bullets: [
+        'Cocoa Butter: ~48–55%',
+        'Cocoa Solids: ~45–52%',
+        'Moisture: <1%',
+        'Natural antioxidants & polyphenols'
+      ]
+    },
+    {
+      title: '⭐ BENEFITS',
+      bullets: [
+        'Strong, authentic cocoa flavor',
+        'Adds color, texture & richness to recipes',
+        'Naturally rich in flavonoids & antioxidants',
+        'Essential base for premium chocolate manufacturing',
+        'Vegan, gluten-free & non-GMO'
+      ]
+    },
+    {
+      title: '✨ SUGGESTED USES',
+      bullets: [
+        'Chocolate & confectionery production',
+        'Hot chocolate mixes & beverage blends',
+        'Bakery & dessert applications',
+        'Cosmetic formulations (aroma & antioxidant boost)'
+      ]
+    }
+  ]
+}
+
 ];
 
 export const ALL_PRODUCTS: Product[] = [...COUVERTURE, ...CACAO];
