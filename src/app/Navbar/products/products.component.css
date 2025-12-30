@@ -265,6 +265,32 @@
     gap: 24px;
   }
 }
+/* Default (desktop & tablet) */
+.quick-nav {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* MOBILE: 2-column parallel layout */
+@media (max-width: 768px) {
+  .quick-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 👈 2 columns */
+    gap: 12px;
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  .nav-link {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 10px;
+    text-align: center;
+    white-space: nowrap;   /* keeps text clean */
+  }
+}
+
 
 
 

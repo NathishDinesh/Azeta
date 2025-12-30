@@ -192,7 +192,7 @@ p strong {
 
 .about-step .image img {
   width: 100%;
-  height: 360px;
+  height: 460px;
   object-fit: cover;
   border-radius: 12px;
 }
@@ -273,7 +273,7 @@ p strong {
   .about-step .image img,
   .story-image img,
   .image-grid img {
-    height: 200px;
+    height: 400px;
   }
 
   .image-grid {
