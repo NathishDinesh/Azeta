@@ -9,6 +9,9 @@
       <nav class="quick-nav" aria-label="product categories">
         <button class="nav-link" (click)="scrollTo('couverture')">Couverture Bars</button>
         <button class="nav-link" (click)="scrollTo('cacao')">Cacao Products</button>
+        <button class="nav-link" (click)="scrollTo('coatings')">Coatings</button>
+        <button class="nav-link" (click)="scrollTo('fillings')">Fillings</button>
+
       </nav>
     </div>
   </section>
@@ -50,6 +53,38 @@
           <div class="item-title">{{ item.name }}</div>
         </div>
       </div>
+    </div>
+  </section>
+  <div class="section-divider"></div>
+
+  <section id="coatings" class="product-section couverture-section">
+    <div class="section-inner">
+      <h3 class="section-title">Coatings</h3>
+      <!-- <div class="section-subtitle">From Pure Cacao to Perfect Bars</div> -->
+
+      <div class="mason-grid">
+  <div class="mason-item" *ngFor="let item of coatings"
+     [routerLink]="['/product', item.id]" role="link" [attr.aria-label]="item.name">
+    <img [src]="item.image" [alt]="item.name" />
+    <div class="item-title">{{ item.name }}</div>
+      </div>
+</div>
+    </div>
+  </section>
+  <div class="section-divider"></div>
+
+   <section id="fillings" class="product-section couverture-section">
+    <div class="section-inner">
+      <h3 class="section-title">Fillings</h3>
+      <!-- <div class="section-subtitle">From Pure Cacao to Perfect Bars</div> -->
+
+      <div class="mason-grid">
+  <div class="mason-item" *ngFor="let item of fillings"
+     [routerLink]="['/product', item.id]" role="link" [attr.aria-label]="item.name">
+    <img [src]="item.image" [alt]="item.name" />
+    <div class="item-title">{{ item.name }}</div>
+      </div>
+</div>
     </div>
   </section>
 

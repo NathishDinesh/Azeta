@@ -96,11 +96,11 @@
 /* --- Compact Cacao Section Spacing --- */
 
 .cacao-section {
-  padding-top: 20px !important; /* reduce gap under divider */
+  padding-top: 10px !important; /* reduce gap under divider */
 }
 
 .cacao-section .section-title {
-  margin-bottom: 10px; /* pull title closer to grid */
+  margin-bottom: 1px; /* pull title closer to grid */
 }
 
 .cacao-section .mason-grid {
@@ -132,6 +132,7 @@
   object-fit: contain;
   display: block;
   margin: 0 auto;
+  border-radius: 10px;
   transition: transform 0.28s ease, box-shadow 0.28s ease;
 
 }
@@ -150,7 +151,7 @@
   color: #111;
   text-transform: uppercase;
   font-weight: bold;
-    text-decoration: underline;  /* always underline */
+    /* text-decoration: underline;  */
   text-underline-offset: 3px;  /* looks cleaner */
   cursor: pointer;
 }
@@ -241,6 +242,27 @@
   .product-section {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+#coatings .mason-grid {
+  grid-template-columns: repeat(5, minmax(160px, 1fr));
+  justify-content: center;
+  gap: 48px;
+}
+
+/* ==========================
+   FILLINGS SECTION (3 ITEMS)
+========================== */
+#fillings .mason-grid {
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  justify-content: center;
+  gap: 56px;
+}
+@media (max-width: 768px) {
+  #coatings .mason-grid,
+  #fillings .mason-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
 }
 

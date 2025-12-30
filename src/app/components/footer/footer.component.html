@@ -9,10 +9,10 @@
     <div class="footer-column links">
       <h3>Explore</h3>
       <ul>
-        <li><a routerLink="/home">Home</a></li>
-        <li><a routerLink="/about">About</a></li>
-        <li><a routerLink="/products">Products</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
+        <li><a (click)="openHome()">Home</a></li>
+        <li><a (click)="openAbout()">About</a></li>
+        <li><a (click)="openProducts()">Products</a></li>
+        <li><a (click)="openContact()">Contact</a></li>
         <li><a href="assets/Catalogue.pdf" target="_blank">Catalogue</a></li>
       </ul>
     </div>
@@ -31,6 +31,6 @@
   </div>
 
   <div class="footer-bottom">
-    <p>© 2025 Azeta Chocolates. All Rights Reserved. Handcrafted in Pollachi.</p>
+    <!-- <p>© 2025 Azeta Chocolates. All Rights Reserved. Handcrafted in Pollachi.</p> -->
   </div>
 </footer>

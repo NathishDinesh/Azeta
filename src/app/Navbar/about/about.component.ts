@@ -1,5 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Meta, Title } from '@angular/platform-browser';
+
 @Component({
   selector: 'app-about',
   imports: [],
@@ -7,7 +9,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './about.component.css'
 })
 export class AboutComponent implements AfterViewInit {
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute,private title: Title, private meta: Meta) {
+     this.title.setTitle('About Us | Azeta Chocolate Brand');
+  this.meta.updateTag({
+    name: 'description',
+    content: 'Learn the story behind Azeta – a Tree-to-bar chocolate brand from Pollachi.'
+  });
+  }
   ngAfterViewInit() {
     // read the fragment once the view is ready and scroll smoothly
     this.route.fragment.subscribe(fragment => {

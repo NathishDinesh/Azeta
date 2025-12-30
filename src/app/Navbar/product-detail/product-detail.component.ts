@@ -30,4 +30,7 @@ export class ProductDetailComponent implements OnInit {
   goBack() {
     this.router.navigate(['/products']);
   }
+  goToContact(){
+    this.router.navigate(['/contact']);
+  }
 }

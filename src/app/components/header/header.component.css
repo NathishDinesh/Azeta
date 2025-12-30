@@ -80,6 +80,11 @@
 .menu-toggle .material-icons {
   font-size: 2rem;
 }
+ .reg-mark {
+  font-size: 10px;     /* smaller */
+  margin-left: 2px;    /* little space */
+  font-weight: normal; /* thinner */
+}
 
 /* ========================= */
 /* RESPONSIVE FIXES */
@@ -154,6 +159,7 @@
   .explore-btn {
     text-align: center;
   }
+ 
 }
 
 

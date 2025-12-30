@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { CACAO,COUVERTURE } from '../../../product-data';
+import { CACAO,Coatings,COUVERTURE, Fillings } from '../../../product-data';
 import { ActivatedRoute } from '@angular/router';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-products',
@@ -12,9 +13,17 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute,private title: Title, private meta: Meta) {
+     this.title.setTitle('Products | Azeta Craft Chocolate');
+  this.meta.updateTag({
+    name: 'description',
+    content: 'Explore Azeta’s handcrafted couverture chocolate bars and cacao products.'
+  });
+  }
  couverture = COUVERTURE;
   cacao = CACAO;
+  coatings = Coatings;
+  fillings = Fillings;
 
 
     ngAfterViewInit() {

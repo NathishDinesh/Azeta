@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router'; 
+import { RouterModule,Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-footer',
@@ -8,4 +8,18 @@ import { RouterModule } from '@angular/router';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'
 })
-export class FooterComponent {}
+export class FooterComponent {
+  constructor(private router: Router) {}
+ openProducts() {
+  this.router.navigate(['/products'], { fragment: 'couverture' });
+}
+openAbout() {
+  this.router.navigate(['/about'], { fragment: 'storySection' });
+}
+openContact(){
+    this.router.navigate(['/contact'],{fragment:'contactPage'});
+  }
+  openHome() {
+    this.router.navigate(['/'],{fragment:'homeSection'});
+  }
+} 

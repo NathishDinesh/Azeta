@@ -12,6 +12,7 @@ html, body {
   scroll-behavior: smooth;
 }
 
+
 /* Override Angular Material toolbar default */
 mat-toolbar {
   width: 100vw !important;        /* ✅ Exactly viewport width */
@@ -26,4 +27,8 @@ mat-toolbar {
     padding-left: max(0px, env(safe-area-inset-left));
     padding-right: max(0px, env(safe-area-inset-right));
   }
+}
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  letter-spacing: 0.02em;
 }

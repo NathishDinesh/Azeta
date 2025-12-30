@@ -6,7 +6,7 @@
   <div class="hero-overlay"></div>
 
   <div class="hero-center">
-    <h1>Tree to Bar.<br />Heart to Taste.</h1>
+    <h1 id="homeSection">Tree to Bar.<br />Heart to Taste.</h1>
     <p>Azeta, Pollachi</p>
   </div>
 </section>
@@ -27,17 +27,23 @@
 
       <a class="shop-tile" (click)="openCacao()" role="link" aria-label="Cacao bars">
         <div class="shop-thumb">
-          <img src="assets/chocolates/cocoaHome.jpg" alt="Cacao Products" />
+          <img src="assets/chocolates/cocoaHome.JPG" alt="Cacao Products" />
         </div>
         <div class="shop-label">CACAO PRODUCTS</div>
       </a>
-
-      <!-- <a class="shop-tile" (click)="openCouverture()" role="link" aria-label="Signature bars">
+ <a class="shop-tile" (click)="openCoating()" role="link" aria-label="Signature bars">
         <div class="shop-thumb">
-          <img src="assets/chocolates/signatureHome.png" alt="Signature Bars" />
+          <img src='/assets/chocolates/CoatedHazelnut.png' alt="Signature Bars" />
         </div>
-        <div class="shop-label">WHITE CHOCOLATE COUVERTURE</div>
-      </a>  -->
+        <div class="shop-label">COATINGS</div>
+      </a> 
+       <a class="shop-tile" (click)="openFillings()" role="link" aria-label="Signature bars">
+        <div class="shop-thumb">
+          <img src="/assets/chocolates/ChocolateHazelnutfilling.png" alt="Signature Bars" />
+        </div>
+        <div class="shop-label">FILLINGS</div>
+      </a>  
+      
 
       <!-- sample/4th tile -->
       <!-- <a class="shop-tile" (click)="navigate('/products?category=gift')" role="link" aria-label="Gift sets">
@@ -61,10 +67,13 @@
   <div class="story-text">
     <h2>What Makes Azeta Different?</h2>
     <p>
-      Born in the heart of <strong>Pollachi</strong>, Azeta was founded with a single dream — 
-      to bridge science, craftsmanship, and the rich soil of Tamil Nadu. 
-      From our family’s cacao plantation to your table, each bar is a story of 
-      dedication, sustainability, and soul.
+      Azeta originates in Pollachi, India, producing <strong>single origin cacao</strong> that is cultivated,
+       fermented, and processed under close in house control.
+        Using traditional wooden box fermentation alongside modern production systems.
+         This integrated approach ensures traceability, consistency, and dependable performance across batches.
+          Our chocolates unite craft integrity with industrial reliability.
+           For global buyers seeking more than commodity cocoa, Azeta represents a refined,
+      origin driven alternative.
     </p>
     <a class="btn-outline" (click)="openStory()">Discover Our Story</a>
   </div>
@@ -78,11 +87,9 @@
 <section class="passion-section">
   <div class="passion-overlay"></div>
   <div class="passion-text">
-    <h2>From Bean to Bar</h2>
+    <h2>Tree to Bar</h2>
     <p>
-      Every bean is fermented, dried, and roasted under watchful eyes. 
-      Our process is not just about chocolate — it’s about preserving the character of cacao. 
-      At Azeta, craftsmanship meets chemistry to create flavours that stay with you.
+      Every bean is fermented, dried, graded under watchful eyes. Our process is not just about chocolate, it’s about preserving the character of cacao. At Azeta, craftsmanship meets chemistry to create flavours that stay with you.
     </p>
     <a class="btn-primary" (click)="openAbout()">Know More</a>
   </div>
@@ -94,14 +101,13 @@
 
     <a class="sustainable-media" (click)="openAbout()" role="link" aria-label="Learn about sustainable cocoa">
       <!-- local image path from your uploaded file -->
-      <img src="assets/chocolates/cacaoSustain.webp" alt="Cocoa cultivation" />
+      <img src="assets/chocolates/cacaoSustain.png" alt="Cocoa cultivation" />
     </a>
 
     <div class="sustainable-text">
       <h2>Sustainable Cacao Cultivation</h2>
       <p>
-        We partner with local growers in Pollachi to preserve biodiversity and improve farmer livelihoods.
-        Our small-batch approach respects soil, season and community — producing cacao with character and care.
+       We partner with local growers in Pollachi to preserve biodiversity and improve farmer livelihoods. Our production approach respects soil, season and community producing cacao with character and care.
       </p>
       <p class="sustainable-cta">
         <a class="btn-outline" (click)="openSustainFarm()">Know More</a>
@@ -120,8 +126,7 @@
 
     <h2>“Looking to Import Premium Cacao?”</h2>
     <p>
-      Supplying premium cacao, bean-to-bar chocolate and couverture products 
-      for global chocolate makers, bakeries and specialty brands.
+      Supplying premium cacao, Tree-to-bar chocolates and Couverture products for global chocolate makers, confectioneries and specialty brands.
     </p>
 
     <a class="btn-primary-contact" (click)="openContact()">Reach Us</a>

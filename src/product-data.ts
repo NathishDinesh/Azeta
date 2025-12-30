@@ -25,419 +25,379 @@ export interface Product {
 
 export const COUVERTURE: Product[] = [
   {
-    id: 'couv-45',
-    name: '45% Bar',
-    image: '/assets/chocolates/45DarkCo.jpg',
+  id: 'couv-45',
+  name: '45% Bar',
+  image: '/assets/chocolates/45DarkCo.jpg',
 
-    // BIG title on detail page
-    desc: '45% Dark Couverture',
+  // Product title
+  desc: '45% Dark Couverture Chocolate',
 
-    // Golden hero line
-    heroLine: 'Pure Craft. Perfect Melt.',
+  // Short hero line (optional – keep minimal for B2B feel)
+  heroLine: 'Balanced Sweetness. Clean Melt.',
 
-    // Subtitle line
-    intro: 'Your Signature Chocolate Starts Here.',
+  // Short intro / spec highlight
+  intro: 'Quantity (Minimum): 500g',
 
-    // Main intro paragraph
-    highlight:
-      'A masterful balance of cocoa depth and gentle sweetness. With balanced cocoa richness and flawless fluidity, this chocolate is approachable for all palates.',
-
-    // Optional connecting sentence (we used this field for 55%)
-    bridge: '',   // remove if not needed
-
-    sections: [
-      {
-        title: '🍰 IDEAL APPLICATION',
-        bullets: [
-          'Artisan bonbons & truffles',
-          'Ganache, mousse, and fillings',
-          'Cakes, pastries & tarts',
-          'Dipped fruits, nuts, and cookies',
-          'Chocolate bars & custom molds'
-        ]
-      },
-      {
-        title: '🌱 ETHICAL & SUSTAINABLE',
-        text:
-          'We partner with responsible cocoa growers to support fair trade practices and environmentally conscious farming. Enjoy chocolate that tastes good and does good.'
-      }
-    ]
-  },
-  {
-    id: 'couv-55',
-    name: '55% Bar',
-    image: '/assets/chocolates/55DarkCo.PNG',
-
-    // this will be your main black H1
-    desc: '55% Dark Couverture ',
-
-    heroLine: 'Bold Depth. Silky Precision. Crafted for Masters.',
-    intro:
-      'Our 55% Dark Couverture Chocolate delivers a refined balance of cocoa intensity and smooth sweetness.',
-    highlight:
-      'A perfectly balanced 55% dark couverture that snaps clean, shines bright, and elevates every confection.',
-    // ⭐ the missing sentence:
-    bridge:
-      'Whether you are creating a signature collection or elevating everyday classics, this chocolate delivers unmatched sophistication.',
-
-    sections: [
-      {
-        title: 'TASTING NOTES',
-        bullets: [
-          'Aroma: Deep cocoa with subtle roasted notes.',
-          'Taste: Bold dark chocolate, balanced sweetness, hints of dried fruit and warm spice.'
-        ]
-      },
-      {
-        title: '🍰 IDEAL APPLICATIONS',
-        bullets: [
-          'Artisan bonbons & pralines',
-          'Elegant coatings & enrobing',
-          'Glossy molded bars & figures',
-          'Smooth ganache, truffles & fillings',
-          'Luxury patisserie, tarts & plated desserts'
-        ]
-      },
-      {
-        title: '🌱 ETHICAL & SUSTAINABLE',
-        text: 'We partner with responsible cocoa growers to support fair trade practices and environmentally conscious farming. Enjoy chocolate that tastes good and does good.'
-      }
-    ]
-  },
-  {
-    id: 'couv-70',
-    name: '70% Bar',
-    image: '/assets/chocolates/70DarkCo.PNG',
-
-    // BIG title on the detail page
-    desc: '70% Dark Couverture',
-
-    // Golden hero line
-    heroLine: 'Pure Intensity. Signature Excellence. Crafted for True Artisans.',
-
-    // Short intro sentence
-    intro:
-      'Our 70% Dark Couverture Chocolate delivers uncompromising depth, exceptional purity, and a powerful cocoa profile designed for master chocolatiers and high-end pastry creators.',
-
-    // Highlight paragraph
-    highlight:
-      'Bold, complex, and deeply aromatic with a refined bitterness that showcases true cocoa character.',
-
-    // Connecting line
-    bridge:
-      'Perfect for luxurious collections and signature recipes where flavor intensity is essential.',
-
-    sections: [
-      {
-        title: 'TASTING NOTES',
-        bullets: [
-          'Aroma: Intense cocoa, subtle earthy notes, hints of dark fruit.',
-          'Taste: Rich, mature dark chocolate with balanced bitterness and a layered flavor structure.'
-        ]
-      },
-      {
-        title: '🍰 IDEAL APPLICATIONS',
-        bullets: [
-          'Premium chocolates & pralines',
-          'High-impact ganache & truffles',
-          'Ultra-smooth glazes & coatings',
-          'Gourmet bars & single-origin creations',
-          'Culinary desserts requiring strong cocoa presence'
-        ]
-      },
-      {
-        title: '🌱 ETHICAL & SUSTAINABLE',
-        text:
-          'We partner with responsible cocoa growers to support fair trade practices and environmentally conscious farming. Enjoy chocolate that tastes good and does good.'
-      }
-    ]
-  },
-  {
-    id: 'couv-85',
-    name: '85% Bar',
-    image: '/assets/chocolates/85DarkCo.PNG',
-
-    // Big title on detail page
-    desc: '85% Dark Couverture',
-
-    // Golden hero line
-    heroLine: 'Uncompromising Strength. Pure Cocoa Mastery.',
-
-    // Intro paragraph
-    intro:
-      'Our 85% Dark Couverture Chocolate is engineered for chocolatiers and pastry professionals who demand the highest level of cocoa intensity.',
-
-    // Highlight paragraph
-    highlight:
-      'Crafted from meticulously selected high-cocoa beans, it offers a deep, commanding cocoa presence with a remarkably clean and refined bitterness.',
-
-    // Bridge sentence
-    bridge:
-      'Perfect for culinary work where purity, intensity, and precision are essential.',
-
-    sections: [
-      {
-        title: 'TASTING NOTES',
-        bullets: [
-          'Aroma: Robust cocoa, warm woodiness, subtle roasted notes.',
-          'Taste: Intensely dark with layered complexity — earthy depth, dark fruit hints, and a beautifully structured bitterness.'
-        ]
-      },
-      {
-        title: '🍰 IDEAL APPLICATIONS',
-        bullets: [
-          'Ultra-premium chocolate bars & single-origin concepts',
-          'High-cocoa ganache, truffles & pralines',
-          'Sophisticated dessert components requiring intense flavor',
-          'Bold glazes, coatings & artistic chocolate work',
-          'Balance-enhancing ingredient for blends and signature recipes'
-        ]
-      },
-      {
-        title: '🌱 ETHICAL & SUSTAINABLE',
-        text:
-          'We partner with responsible cocoa growers to support fair trade practices and environmentally conscious farming. Enjoy chocolate that tastes good and does good.'
-      }
-    ]
-  },
-
-  {
-    id: 'couv-36',
-    name: '35% Milk Bar',
-    image: '/assets/chocolates/35MilkCo.PNG',
-
-    // Big title on detail page
-    desc: '35% Milk Couverture',
-
-    // Golden hero line
-    heroLine: 'Creamy Elegance. Professional Craftsmanship.',
-
-    // Intro paragraph
-    intro:
-      'Our 35% Milk Couverture Chocolate blends rich cocoa with creamy milk for a smooth, velvety chocolate experience.',
-
-    // Highlight paragraph
-    highlight:
-      'A perfectly balanced milk chocolate with smooth sweetness and gentle cocoa depth.',
-
-    // Transitional line / bridge
-    bridge:
-      'Creamy, well-balanced flavor for versatile use.',
-
-    sections: [
-      {
-        title: 'TASTING NOTES',
-        bullets: [
-          'Aroma: Creamy, warm cocoa with subtle caramel notes.',
-          'Taste: Smooth, sweet, and well-rounded milk chocolate with a gentle cocoa finish.'
-        ]
-      },
-      {
-        title: '🍰 IDEAL APPLICATIONS',
-        bullets: [
-          'Truffles & pralines',
-          'Mousse, ganache, and creamy fillings',
-          'Coatings, glazes, and dipped confections',
-          'Cakes, tarts, and pastry decorations',
-          'Chocolate bars & molded shapes'
-        ]
-      },
-      {
-        title: '🌱 ETHICAL & SUSTAINABLE',
-        text:
-          'We partner with responsible cocoa growers to support fair trade practices and environmentally conscious farming. Enjoy chocolate that tastes good and does good.'
-      }
-    ]
-  },
-
-  {
-    id: 'couv-37',
-    name: '45% Milk Bar',
-    image: '/assets/chocolates/45MilkCo.PNG   ',
-
-    // Big title on detail page
-    desc: '45% Milk Couverture',
-
-    // Golden hero line
-    heroLine: 'Silky Smoothness. Masterful Balance.',
-
-    // Intro paragraph
-    intro:
-      'Our Milk Couverture Chocolate brings together fine cocoa and rich milk for a smooth, creamy, and premium chocolate experience.',
-
-    // Highlight paragraph
-    highlight:
-      'Perfectly balanced with gentle sweetness, soft cocoa depth, and a velvety melt — crafted for chocolatiers and pastry professionals.',
-
-    // Bridge / connecting sentence
-    bridge:
-      'Designed for both classic creations and modern confections, offering exceptional texture and flavor harmony.',
-
-    sections: [
-      {
-        title: 'TASTING NOTES',
-        bullets: [
-          'Aroma: Creamy milk chocolate with warm cocoa depth.',
-          'Taste: Smooth, sweet, and balanced flavor profile with a pleasant cocoa finish.'
-        ]
-      },
-      {
-        title: '🍰 IDEAL APPLICATIONS',
-        bullets: [
-          'Pralines & creamy truffles',
-          'Ganache, mousse & fillings',
-          'Cakes, pastries & tarts',
-          'Chocolate bars & molded shapes',
-          'Decorations, glazes & dipped confections'
-        ]
-      },
-      {
-        title: '🌱 ETHICAL & SUSTAINABLE',
-        text:
-          'We partner with responsible cocoa growers to support fair trade practices and environmentally conscious farming. Enjoy chocolate that tastes good and does good.'
-      }
-    ]
-  }
-
-
-];
-
-export const CACAO: Product[] = [
-  {
-  id: 'cacao-butter',
-  name: 'Natural Non-Deodorised Cacao Butter',
-  image: '/assets/chocolates/cocoaBut.jpg',
-
-  // BIG title on detail page
-  desc: 'Natural Non-Deodorised Cacao Butter',
-
-  // Golden hero line
-  heroLine: 'Pure, Natural Cocoa Butter',
-
-  // Subtitle line
-  // intro: 'The Natural Essence of Cocoa — Pure & Untouched.',
-
-  // Main intro paragraph
+  // Main description
   highlight:
-    'Our Natural Non-Deodorised Cocoa Butter is a premium, unrefined vegetable fat extracted from high-quality cocoa beans. Unlike deodorised versions, this butter retains its rich, authentic chocolate aroma and natural golden color. It is packed with antioxidants and nourishing fatty acids, making it ideal for skincare, haircare, and artisanal chocolate production',
+    'A low-bitterness dark couverture with elevated sweetness and excellent melt. Balanced cocoa flavour and creamy texture make it ideal for glazing, enrobing, and applications requiring clean sweetness without intensity.',
 
-  // Optional connecting sentence
+  // Optional bridge (not needed here)
   bridge: '',
 
   sections: [
     {
-      title: '⭐ BENEFITS',
+      title: 'FLUIDITY',
+      text: '●●●○○'
+    },
+    {
+      title: 'INGREDIENTS',
       bullets: [
-        'Deeply moisturises and softens skin',
-        'Supports elasticity, smoothness, and natural glow',
-        'Rich in antioxidants and nourishing fatty acids',
-        'Ideal for soaps, balms, lotions, and body butters',
-        'Suitable for food, cosmetic & pharmaceutical applications'
+        'Cocoa Nibs',
+        'Cocoa Butter',
+        'Cane Sugar'
       ]
     },
     {
-      title: '✨ SUGGESTED USES',
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Best before 12 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship chocolates across India and internationally. Shipping charges apply.'
+    }
+  ]
+},
+
+  {
+  id: 'couv-55',
+  name: '55% Bar',
+  image: '/assets/chocolates/55DarkCo.PNG',
+
+  // Product title
+  desc: '55% Dark Couverture Chocolate',
+
+  // Short hero line
+  heroLine: 'Balanced Cocoa. Professional Precision.',
+
+  // Quantity info
+  intro: 'Quantity (Minimum): 500g',
+
+  // Main description
+  highlight:
+    'A well-balanced dark couverture with pronounced cocoa notes and controlled bitterness. Smooth melt and reliable fluidity make it a versatile choice for ganache, molding, and everyday professional use.',
+
+  // Optional bridge (not required here)
+  bridge: '',
+
+  sections: [
+    {
+      title: 'FLUIDITY',
+      text: '●●●○○'
+    },
+    {
+      title: 'INGREDIENTS',
       bullets: [
-        'Body butters & lotions',
-        'Lip balms & massage bars',
-        'Hair conditioners & masks',
-        'Artisanal chocolate & confectionery',
-        'Baking, glazing & gourmet applications'
+        'Cocoa Nibs',
+        'Cocoa Butter',
+        'Cane Sugar'
       ]
+    },
+    {
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Best before 12 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship chocolates across India and internationally. Shipping charges apply.'
+    }
+  ]
+},
+
+  
+ {
+  id: 'couv-70',
+  name: '70% Bar',
+  image: '/assets/chocolates/70DarkCo.PNG',
+
+  // Product title
+  desc: '70% Dark Couverture Chocolate',
+
+  // Short hero line
+  heroLine: 'Intense Cocoa. Refined Bitterness.',
+
+  // Quantity info
+  intro: 'Quantity (Minimum): 500g',
+
+  // Main description
+  highlight:
+    'An intense dark couverture with bold cocoa character and restrained sweetness. Clean bitterness, strong aroma, and excellent melt performance make it ideal for ganache, pastry fillings, and flavour-forward desserts.',
+
+  // Optional bridge (not needed here)
+  bridge: '',
+
+  sections: [
+    {
+      title: 'FLUIDITY',
+      text: '●●●●○'
+    },
+    {
+      title: 'INGREDIENTS',
+      bullets: [
+        'Cocoa Nibs',
+        'Cocoa Butter',
+        'Cane Sugar'
+      ]
+    },
+    {
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Best before 12 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship chocolates across India and internationally. Shipping charges apply.'
     }
   ]
 },
 
 {
-  id: 'cacao-powder',
-  name: 'Natural Cacao Powder',
-  image: '/assets/chocolates/cocoaPowder.jpeg',
+  id: 'couv-85',
+  name: '85% Bar',
+  image: '/assets/chocolates/85DarkCo.PNG',
 
-  // BIG title on detail page
-  desc: 'Natural Cacao Powder',
+  // Product title
+  desc: '85% Dark Couverture Chocolate',
 
-  // Golden hero line
-  heroLine: 'Rich. Aromatic. Pure Cocoa Depth.',
+  // Short hero line
+  heroLine: 'Maximum Cocoa. Pure Expression.',
 
-  // Subtitle line (optional)
-  // intro: '',
+  // Quantity info
+  intro: 'Quantity (Minimum): 500g',
 
-  // Main intro paragraph
+  // Main description
   highlight:
-    'Natural Cocoa Powder is crafted by pressing roasted cocoa beans to remove a portion of their cocoa butter, then finely grinding the remaining solids. It retains its natural acidity, deep chocolate aroma, and rich brown color — perfect for baking, beverages, desserts, and even cosmetic formulations requiring pure cocoa richness.',
+    'A high-intensity dark couverture with deep cocoa notes and minimal sweetness. Firm bitterness, clean finish, and precise melt make it ideal for flavour-driven ganache, baking, and applications requiring maximum cocoa impact.',
 
-  // Optional connecting sentence
+  // Optional bridge (not needed here)
   bridge: '',
 
   sections: [
     {
-      title: '🌿 TYPICAL COMPOSITION',
+      title: 'FLUIDITY',
+      text: '●●●●○'
+    },
+    {
+      title: 'INGREDIENTS',
       bullets: [
-        'Cocoa Butter: ~10–12% (High-fat variants: 20–22%)',
-        'Cocoa Solids: ~88–90%',
-        'Moisture: <5%',
-        'Natural pH: ~5.2–5.8',
-        'Rich in natural antioxidants & polyphenols'
+        'Cocoa Nibs',
+        'Cocoa Butter',
+        'Cane Sugar'
       ]
     },
     {
-      title: '✨ SUGGESTED USES',
-      bullets: [
-        'Cakes, brownies, biscuits & pastries',
-        'Hot chocolate, smoothies & beverages',
-        'Chocolate coatings & confectionery',
-        'Ice creams & dairy-based desserts',
-        'Cosmetic scrubs, masks & natural soaps'
-      ]
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Best before 12 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship chocolates across India and internationally. Shipping charges apply.'
     }
   ]
 },
+
+{
+  id: 'couv-35',
+  name: '35% Milk Bar',
+  image: '/assets/chocolates/35MilkCo.PNG',
+
+  // Product title
+  desc: '35% Milk Couverture Chocolate',
+
+  // Short hero line
+  heroLine: 'Creamy Milk. Smooth Melt.',
+
+  // Quantity info
+  intro: 'Quantity (Minimum): 500g',
+
+  // Main description
+  highlight:
+    'A smooth milk couverture with pronounced dairy notes and gentle cocoa flavour. High fluidity and a creamy melt make it ideal for molding, enrobing, and soft-centre fillings.',
+
+  // Optional bridge (not needed here)
+  bridge: '',
+
+  sections: [
+    {
+      title: 'FLUIDITY',
+      text: '●●●○○'
+    },
+    {
+      title: 'INGREDIENTS',
+      bullets: [
+        'Cocoa Nibs',
+        'Cocoa Butter',
+        'Cane Sugar',
+        'Skimmed Milk Powder',
+        'Whole Milk Powder',
+        'Ethylvanillin'
+      ]
+    },
+    {
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Best before 12 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship chocolates across India and internationally. Shipping charges apply.'
+    }
+  ]
+},
+
+{
+  id: 'couv-45-milk',
+  name: '45% Milk Bar',
+  image: '/assets/chocolates/45MilkCo.PNG',
+
+  // Product title
+  desc: '45% Milk Couverture Chocolate',
+
+  // Short hero line
+  heroLine: 'Cocoa-Forward Milk. Refined Balance.',
+
+  // Quantity info
+  intro: 'Quantity (Minimum): 500g',
+
+  // Main description
+  highlight:
+    'A cocoa-forward milk couverture with reduced sweetness and subtle caramel notes. Smooth melt and balanced viscosity make it ideal for premium pastries, ganache, and refined milk chocolate applications.',
+
+  // Optional bridge (not needed here)
+  bridge: '',
+
+  sections: [
+    {
+      title: 'FLUIDITY',
+      text: '●●●○○'
+    },
+    {
+      title: 'INGREDIENTS',
+      bullets: [
+        'Cocoa Nibs',
+        'Cocoa Butter',
+        'Cane Sugar',
+        'Skimmed Milk Powder',
+        'Whole Milk Powder',
+        'Ethylvanillin'
+      ]
+    },
+    {
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Best before 12 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship chocolates across India and internationally. Shipping charges apply.'
+    }
+  ]
+}
+
+
+
+];
+
+export const CACAO: Product[] = [
+{
+  id: 'cocoa-butter-natural',
+  name: 'Natural Non-Deodorised Cocoa Butter',
+  image: '/assets/chocolates/cocoaBut.jpg',
+
+  // Product title
+  desc: 'Natural Non-Deodorised Cocoa Butter',
+
+  // Short hero line
+  heroLine: 'Pure Cocoa Fat. Natural Aroma.',
+
+  // Quantity info
+  intro: 'Quantity (Minimum): 1000g',
+
+  // Main description
+  highlight:
+    'An unrefined cocoa butter retaining its natural cocoa volatiles and aroma. High fat purity, stable crystallisation, and a clean melt improve viscosity, tempering control, and snap in chocolate and compound applications.',
+
+  // Optional bridge (not needed here)
+  bridge: '',
+
+  sections: [
+    {
+      title: 'INGREDIENTS',
+      bullets: [
+        'Cocoa Nibs'
+      ]
+    },
+    {
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Shelf life is 24 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship our products across India and internationally. Shipping charges apply.'
+    }
+  ]
+},
+
+
+{
+  id: 'cacao-powder',
+  name: 'Natural Cocoa Powder',
+  image: '/assets/chocolates/cocoaPowder.jpeg',
+
+  // Product title
+  desc: 'Natural Cocoa Powder',
+
+  // Short hero line
+  heroLine: 'Pure Cocoa. Natural Intensity.',
+
+  // Quantity info
+  intro: 'Quantity (Minimum): 1000g',
+
+  // Main description
+  highlight:
+    'An unprocessed and unsweetened natural cocoa powder rich in flavonoids and essential minerals. Retaining its natural acidity and deep cocoa aroma, it delivers authentic chocolate flavour for baking, beverages, and confectionery applications.',
+
+  // Optional bridge (not needed here)
+  bridge: '',
+
+  sections: [
+    {
+      title: 'INGREDIENTS',
+      bullets: [
+        'Cocoa Nibs'
+      ]
+    },
+    {
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Shelf life is 24 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship our products across India and internationally. Shipping charges apply.'
+    }
+  ]
+},
+
 
 {
   id: 'cacao-nibs',
   name: 'Cacao Nibs',
   image: '/assets/chocolates/cocoaNibs.jpeg',
 
-  // BIG title on detail page
+  // Product title
   desc: 'Premium Roasted Cacao Nibs',
 
-  // Golden hero line
-  heroLine: 'Pure. Crunchy. Naturally Intense.',
+  // Short hero line
+  heroLine: 'Pure Cocoa. Natural Crunch.',
 
-  // Subtitle line (optional)
-  // intro: '',
+  // Quantity info
+  intro: 'Quantity (Minimum): 1000g',
 
-  // Main intro paragraph
+  // Main description
   highlight:
-    'Cacao Nibs are small pieces of crushed, roasted cocoa beans — minimally processed to retain their authentic chocolate aroma, bold flavor, and nutrient-rich profile. They offer natural crunch, antioxidants, and pure cocoa intensity, perfect for gourmet foods, desserts, snacks, and artisanal chocolate applications.',
+    'Carefully roasted cacao nibs delivering intense cocoa flavour, clean bitterness, and a crisp texture. Minimally processed to retain natural antioxidants and cocoa character, making them ideal for inclusions, toppings, pralines, and baked applications requiring controlled roast intensity.',
 
-  // Optional connecting sentence
+  // Optional bridge (not needed here)
   bridge: '',
 
   sections: [
     {
-      title: '🌿 TYPICAL COMPOSITION',
+      title: 'INGREDIENTS',
       bullets: [
-        'Cocoa Butter: ~45–55%',
-        'Protein: ~12–15%',
-        'Dietary Fibre: ~10–15%',
-        'Carbohydrates: ~5–10%',
-        'Moisture: <5%',
-        'Natural antioxidants (polyphenols)'
+        'Cocoa Beans'
       ]
     },
     {
-      title: '✨ SUGGESTED USES',
-      bullets: [
-        'Bakery & dessert toppings',
-        'Artisanal chocolate making',
-        'Trail mixes & healthy snacks',
-        'Smoothies & nutritional blends',
-        'Cereals, granola & energy bars'
-      ]
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Shelf life is 24 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship our products across India and internationally. Shipping charges apply.'
     }
   ]
 },
+
 
   
 {
@@ -445,54 +405,347 @@ export const CACAO: Product[] = [
   name: 'Natural Cocoa Mass',
   image: '/assets/chocolates/cocoaMass.jpeg',
 
-  // BIG title on detail page
+  // Product title
   desc: '100% Natural Cocoa Mass',
 
-  // Golden hero line
-  heroLine: 'Pure Cocoa Mass. Unmatched Intensity.',
+  // Short hero line
+  heroLine: 'Pure Cocoa. Total Intensity.',
 
-  // Subtitle line (optional)
-  // intro: '',
+  // Quantity info
+  intro: 'Quantity (Minimum): 1000g',
 
-  // Main intro paragraph
+  // Main description
   highlight:
-    'Natural Cocoa Mass is a minimally processed, 100% cocoa ingredient made from roasted and finely ground cocoa beans. Containing both cocoa solids and cocoa butter in their natural proportions, it delivers intense chocolate flavor, deep color, and exceptional richness — ideal for premium chocolate crafting, baking, beverages, and cosmetic formulations.',
+    'A minimally processed, 100% cocoa ingredient made from roasted and finely ground cocoa beans. Containing cocoa solids and cocoa butter in their natural proportions, it delivers intense chocolate flavour, deep colour, and exceptional richness for premium chocolate, bakery, and beverage applications.',
 
-  // Optional connecting sentence
+  // Optional bridge (not needed here)
   bridge: '',
 
   sections: [
     {
-      title: '🌿 TYPICAL COMPOSITION',
+      title: 'INGREDIENTS',
       bullets: [
-        'Cocoa Butter: ~48–55%',
-        'Cocoa Solids: ~45–52%',
-        'Moisture: <1%',
-        'Natural antioxidants & polyphenols'
+        'Cocoa Beans'
       ]
     },
     {
-      title: '⭐ BENEFITS',
-      bullets: [
-        'Strong, authentic cocoa flavor',
-        'Adds color, texture & richness to recipes',
-        'Naturally rich in flavonoids & antioxidants',
-        'Essential base for premium chocolate manufacturing',
-        'Vegan, gluten-free & non-GMO'
-      ]
-    },
-    {
-      title: '✨ SUGGESTED USES',
-      bullets: [
-        'Chocolate & confectionery production',
-        'Hot chocolate mixes & beverage blends',
-        'Bakery & dessert applications',
-        'Cosmetic formulations (aroma & antioxidant boost)'
-      ]
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Shelf life is 24 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship our products across India and internationally. Shipping charges apply.'
     }
   ]
 }
 
+
 ];
 
-export const ALL_PRODUCTS: Product[] = [...COUVERTURE, ...CACAO];
+export const Coatings:Product[] = [
+  {
+  id: 'coated-almonds',
+  name: 'Chocolate Coated Almonds',
+  image: '/assets/chocolates/Coated Almonds.png', // image from G Drive (replace if needed)
+
+  // Product title
+  desc: 'Chocolate Coated Almonds',
+
+  // Short hero line
+  heroLine: 'Crisp Nuts. Rich Chocolate.',
+
+  // Quantity info
+  intro: 'Quantity (Minimum): 500g',
+
+  // Main description
+  highlight:
+    'Crisp roasted almonds coated in refined dark chocolate. Bold cocoa notes paired with a satisfying crunch create a balanced, elegant finish, making them ideal for premium snacking, gifting, and dessert applications.',
+
+  // Optional bridge (not needed here)
+  bridge: '',
+
+  sections: [
+    {
+      title: 'INGREDIENTS',
+      bullets: [
+        'Roasted Almonds',
+        'Dark Chocolate (Cocoa Mass, Cocoa Butter, Cane Sugar)'
+      ]
+    },
+    {
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Shelf life is 24 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship our products across India and internationally. Shipping charges apply.'
+    }
+  ]
+},
+{
+  id: 'coated-pista',
+  name: 'Chocolate Coated Pista',
+  image: '/assets/chocolates/CoatedPista.png', // image from G Drive (replace extension if required)
+
+  // Product title
+  desc: 'Chocolate Coated Pista',
+
+  // Short hero line
+  heroLine: 'Premium Pistachios. Elegant Chocolate Finish.',
+
+  // Quantity info
+  intro: 'Quantity (Minimum): 500g',
+
+  // Main description
+  highlight:
+    'Premium pistachios enrobed in smooth chocolate with a refined green finish. Balanced coating ensures a clean bite, consistent crunch, and controlled sweetness, making it ideal for professional confectionery, gifting, and dessert applications.',
+
+  // Optional bridge (not needed here)
+  bridge: '',
+
+  sections: [
+    {
+      title: 'INGREDIENTS',
+      bullets: [
+        'Roasted Pistachios',
+        'Chocolate (Cocoa Mass, Cocoa Butter, Cane Sugar)'
+      ]
+    },
+    {
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Shelf life is 24 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship our products across India and internationally. Shipping charges apply.'
+    }
+  ]
+},
+{
+  id: 'coated-hazelnut',
+  name: 'Chocolate Coated Hazelnut',
+  image: '/assets/chocolates/CoatedHazelnut.png', // image from G Drive (update extension if needed)
+
+  // Product title
+  desc: 'Chocolate Coated Hazelnut',
+
+  // Short hero line
+  heroLine: 'Deep Cocoa. Refined Crunch.',
+
+  // Quantity info
+  intro: 'Quantity (Minimum): 500g',
+
+  // Main description
+  highlight:
+    'Roasted hazelnuts enrobed in dark chocolate for pronounced cocoa flavour and clean bitterness. Controlled coating ensures balanced crunch, smooth melt, and a refined finish, making it ideal for premium snacking and professional confectionery applications.',
+
+  // Optional bridge (not needed here)
+  bridge: '',
+
+  sections: [
+    {
+      title: 'INGREDIENTS',
+      bullets: [
+        'Roasted Hazelnuts',
+        'Dark Chocolate (Cocoa Mass, Cocoa Butter, Cane Sugar)'
+      ]
+    },
+    {
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Shelf life is 24 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship our products across India and internationally. Shipping charges apply.'
+    }
+  ]
+},
+{
+  id: 'coated-cranberries',
+  name: 'Chocolate Coated Cranberries',
+  image: '/assets/chocolates/CoatedCranberries .png', // image from G Drive (update extension if needed)
+
+  // Product title
+  desc: 'Chocolate Coated Cranberries',
+
+  // Short hero line
+  heroLine: 'Bright Fruit. Smooth Chocolate.',
+
+  // Quantity info
+  intro: 'Quantity (Minimum): 500g',
+
+  // Main description
+  highlight:
+    'Tangy dried cranberries coated in fine chocolate, offering a refined balance of bright fruit acidity and smooth chocolate. Ideal for premium snacking, gifting, and elegant dessert garnishing.',
+
+  // Optional bridge (not needed here)
+  bridge: '',
+
+  sections: [
+    {
+      title: 'INGREDIENTS',
+      bullets: [
+        'Dried Cranberries',
+        'Chocolate (Cocoa Mass, Cocoa Butter, Cane Sugar)'
+      ]
+    },
+    {
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Shelf life is 24 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship our products across India and internationally. Shipping charges apply.'
+    }
+  ]
+},
+{
+  id: 'coated-butterscotch',
+  name: 'Chocolate Coated Butterscotch',
+  image: '/assets/chocolates/Coated Butterscotch.png', // image from G Drive (update extension if needed)
+
+  // Product title
+  desc: 'Chocolate Coated Butterscotch',
+
+  // Short hero line
+  heroLine: 'Crunchy Caramel. Smooth Chocolate.',
+
+  // Quantity info
+  intro: 'Quantity (Minimum): 500g',
+
+  // Main description
+  highlight:
+    'Crunchy butterscotch pieces enrobed in smooth chocolate for a balanced caramel profile. Controlled coating ensures a clean bite, consistent texture, and reliable performance in confectionery and dessert applications.',
+
+  // Optional bridge (not needed here)
+  bridge: '',
+
+  sections: [
+    {
+      title: 'INGREDIENTS',
+      bullets: [
+        'Butterscotch Pieces',
+        'Chocolate (Cocoa Mass, Cocoa Butter, Cane Sugar)'
+      ]
+    },
+    {
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Shelf life is 24 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship our products across India and internationally. Shipping charges apply.'
+    }
+  ]
+}
+
+
+
+
+
+
+
+]
+
+export const Fillings :Product[] = [
+  {
+  id: 'dark-chocolate-filling',
+  name: 'Dark Chocolate Filling',
+  image: '/assets/chocolates/DarkChocolateFilling.png', // image from G Drive (update extension if needed)
+
+  // Product title
+  desc: 'Dark Chocolate Filling',
+
+  // Short hero line
+  heroLine: 'Smooth Texture. Reliable Performance.',
+
+  // Quantity info
+  intro: 'Quantity (Minimum): 500g',
+
+  // Main description
+  highlight:
+    'A smooth, stable dark chocolate filling with defined cocoa intensity and controlled sweetness. Designed for clean piping, consistent setting, and reliable performance in pralines, enrobed centres, and baked applications.',
+
+  // Optional bridge (not needed here)
+  bridge: '',
+
+  sections: [
+    {
+      title: 'APPLICATIONS',
+      bullets: [
+        'Pralines & molded chocolates',
+        'Enrobed centres',
+        'Filled bars & bonbons',
+        'Baked fillings & layered desserts'
+      ]
+    },
+    {
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Shelf life is 24 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship our products across India and internationally. Shipping charges apply.'
+    }
+  ]
+},
+{
+  id: 'milk-chocolate-filling',
+  name: 'Milk Chocolate Filling',
+  image: '/assets/chocolates/MilkChocolateFilling.png', // image from G Drive (update extension if needed)
+
+  // Product title
+  desc: 'Milk Chocolate Filling',
+
+  // Short hero line
+  heroLine: 'Creamy Texture. Consistent Results.',
+
+  // Quantity info
+  intro: 'Quantity (Minimum): 500g',
+
+  // Main description
+  highlight:
+    'A smooth, stable milk chocolate filling with balanced sweetness and creamy dairy notes. Designed for clean piping, consistent setting, and reliable performance in pralines, enrobed centres, and baked applications.',
+
+  // Optional bridge (not needed here)
+  bridge: '',
+
+  sections: [
+    {
+      title: 'APPLICATIONS',
+      bullets: [
+        'Pralines & molded chocolates',
+        'Enrobed centres',
+        'Filled bars & bonbons',
+        'Baked fillings & layered desserts'
+      ]
+    },
+    {
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Shelf life is 24 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship our products across India and internationally. Shipping charges apply.'
+    }
+  ]
+},
+{
+  id: 'choco-hazelnut-filling',
+  name: 'Choco Hazelnut Filling',
+  image: '/assets/chocolates/ChocolateHazelnutfilling.png', // image from G Drive (update extension if needed)
+
+  // Product title
+  desc: 'Choco Hazelnut Filling',
+
+  // Short hero line
+  heroLine: 'Nutty Depth. Smooth Performance.',
+
+  // Quantity info
+  intro: 'Quantity (Minimum): 500g',
+
+  // Main description
+  highlight:
+    'A smooth chocolate filling blended with roasted hazelnut paste for balanced cocoa intensity and rich nut flavour. Stable texture and clean piping make it ideal for pralines, enrobed centres, and baked applications.',
+
+  // Optional bridge (not needed here)
+  bridge: '',
+
+  sections: [
+    {
+      title: 'APPLICATIONS',
+      bullets: [
+        'Pralines & molded chocolates',
+        'Enrobed centres',
+        'Filled bars & bonbons',
+        'Baked fillings & layered desserts'
+      ]
+    },
+    {
+      title: 'STORAGE & SHIPPING INFO',
+      text:
+        'Shelf life is 24 months from the date of manufacture. Store in a cool, dry place away from direct sunlight. We ship our products across India and internationally. Shipping charges apply.'
+    }
+  ]
+}
+
+
+]
+
+export const ALL_PRODUCTS: Product[] = [...COUVERTURE, ...CACAO,...Coatings,...Fillings];

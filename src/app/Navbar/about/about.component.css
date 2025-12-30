@@ -1,12 +1,49 @@
+/* ==========================
+   HOST / BASE
+========================== */
 :host {
   display: block;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #2b1e1e;
   background-color: #f8f1e7;
   overflow-x: hidden;
 }
 
-/* HERO */
+/* ==========================
+   GLOBAL TYPOGRAPHY (INTER)
+========================== */
+
+/* Base text */
+body,
+p,
+span,
+li,
+div {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+/* All headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* Bold inside text */
+p strong {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+/* ==========================
+   HERO
+========================== */
 .about-hero {
   position: relative;
   height: 70vh;
@@ -17,118 +54,185 @@
   text-align: center;
   color: #f8f1e7;
 }
+
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(20, 10, 10, 0.55);
 }
+
 .hero-text {
   position: relative;
   z-index: 2;
 }
+
 .hero-text h1 {
-  font-family: 'Poppins', serif;
   color: #c6a664;
   font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 10px;
 }
+
 .hero-text p {
   font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 300;
+  letter-spacing: 0.03em;
 }
 
-/* INTRO */
-.about-intro {
+/* ==========================
+   SECTIONS
+========================== */
+.about-section {
+  padding: 20px 10%;
+  background: #ffffff;
+}
+
+.about-section.alt {
+  background: #f4f4f2;
+}
+
+.center {
   text-align: center;
-  padding: 70px 12%;
-  font-size: 1.1rem;
+}
+
+.center-text {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.muted {
+  color: #6b5a5a;
+  margin-top: 10px;
+}
+
+/* ==========================
+   STORY
+========================== */
+.story-text {
+  max-width: 900px;
+  margin: 0 auto 40px;
   line-height: 1.9;
-  color: #2b1e1e;
-  background: #ffffff;
 }
 
-/* FARM SECTION (BEIGE) */
-.about-farm {
-  background: white;
-  padding: 80px 10%;
-}
-.farm-content {
+.story-image {
   display: flex;
+  justify-content: center;
+}
+
+.story-image img {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* ==========================
+   CONTENT BLOCKS
+========================== */
+.content-block {
+  display: flex;
+  align-items: center;
+  gap: 50px;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 40px;
-}
-.farm-image {
-  flex: 1 1 300px;
-}
-.farm-image img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-}
-.farm-text {
-  flex: 1 1 400px;
-}
-.farm-text h2 {
-  font-family: 'Poppins', serif;
-  color: black;
-  font-size: 2rem;
-  margin-bottom: 12px;
-}
-.farm-text p {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #2b1e1e;
 }
 
-/* FERMENTATION SECTION (WHITE) */
-.about-fermentation {
+.content-block .text {
+  flex: 1 1 420px;
+  align-self: center;
+}
+
+.content-block .image {
+  flex: 1 1 320px;
+}
+
+.content-block img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* ==========================
+   IMAGE GRID (SUSTAINABLE)
+========================== */
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+}
+
+/* ==========================
+   STEPS
+========================== */
+.about-step {
+  padding: 70px 10%;
+  background: #f4f4f2;
+}
+
+.about-step.alt {
   background: #ffffff;
-  padding: 80px 10%;
-}
-.fermentation-content {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  align-items: center;
-  gap: 40px;
-}
-.fermentation-image {
-  flex: 1 1 300px;
-  text-align: center;
-}
-.fermentation-image img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-}
-.fermentation-text {
-  flex: 1 1 400px;
-}
-.fermentation-text h2 {
-  font-family: 'Poppins', serif;
-  color: black;
-  font-size: 2rem;
-  margin-bottom: 12px;
-}
-.fermentation-text p {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #2b1e1e;
 }
 
-/* QUOTE */
+.about-step h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+.about-step .image img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ==========================
+   PROCESS INTRO – TYPO
+========================== */
+.process-intro h2 {
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.process-intro h5 {
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  text-transform: none;
+  margin-top: 0;
+  color: #5a4a4a;
+}
+
+/* ==========================
+   QUOTE
+========================== */
 .about-quote {
   background-color: #2b1e1e;
   color: #f8f1e7;
   text-align: center;
   padding: 80px 10%;
-  font-family: 'Poppins', serif;
 }
+
 .about-quote blockquote {
   font-size: clamp(1.4rem, 3vw, 2rem);
   line-height: 1.4;
   font-style: italic;
+  font-weight: 300;
   position: relative;
 }
+
 .about-quote blockquote::before {
   content: '“';
   font-size: 3rem;
@@ -138,36 +242,50 @@
   top: -20px;
 }
 
-/* CTA */
-.about-cta {
-  text-align: center;
-  padding: 60px 0;
-}
-.btn-primary {
-  background: #c6a664;
-  color: #2b1e1e;
-  padding: 12px 24px;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-.btn-primary:hover {
-  background: #2b1e1e;
-  color: #f8f1e7;
-}
-
-/* Responsive */
+/* ==========================
+   MOBILE OPTIMIZATION
+========================== */
 @media (max-width: 768px) {
-  .farm-content,
-  .fermentation-content {
-    flex-direction: column;
+
+  /* Compact spacing */
+  .about-section,
+  .about-step {
+    padding: 36px 6%;
+  }
+
+  .content-block {
+    /* flex-direction: column; */
+    gap: 24px;
     text-align: center;
   }
-  .about-intro {
-    padding: 50px 6%;
+
+  /* Text first, image second */
+  .content-block .text {
+    order: 1;
   }
-  .farm-text h2,
-  .fermentation-text h2 {
-    font-size: 1.8rem;
+
+  .content-block .image {
+    order: 2;
+    margin-top: 12px;
+  }
+
+  /* Smaller images */
+  .about-step .image img,
+  .story-image img,
+  .image-grid img {
+    height: 200px;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Tighter headings */
+  h2 {
+    margin-bottom: 12px;
+  }
+
+  h3 {
+    margin-bottom: 8px;
   }
 }
