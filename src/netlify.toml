@@ -2,7 +2,19 @@
   command = "npm ci && npm run build"
   publish = "dist/azeta-pollachi"
 
+# Allow real files
 [[redirects]]
-  from = "/*"
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+
+# SPA fallback (ONLY non-file routes)
+[[redirects]]
+  from = "/:path((?!.*\\.).*)"
   to = "/index.html"
   status = 200
