@@ -1,34 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+/* ===== GLOBAL RESET ===== */
+* {
+  box-sizing: border-box;
+}
 
-html, body { height: 100%; }
-
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-
-html, body {
+html,
+body {
+  margin: 0;
+  padding: 0;
   width: 100%;
-  max-width: 100%;
-  overflow-x: hidden; /* ✅ Prevent any horizontal scroll */
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
-
-/* Override Angular Material toolbar default */
-mat-toolbar {
-  width: 100vw !important;        /* ✅ Exactly viewport width */
-  max-width: 100% !important;     /* Prevent stretching */
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-/* Optional: fix for mobile safari safe areas (iPhones) */
-@supports (padding: max(0px)) {
-  body {
-    padding-left: max(0px, env(safe-area-inset-left));
-    padding-right: max(0px, env(safe-area-inset-right));
-  }
-}
+/* ===== GLOBAL FONT ===== */
 body {
   font-family: 'Poppins', Arial, sans-serif;
-  letter-spacing: 0.02em;
+  letter-spacing: normal; /* 🔥 IMPORTANT */
 }
